@@ -1,7 +1,6 @@
 package;
 
 import Controls;
-import discord_rpc.DiscordRpc;
 import flash.text.TextField;
 import flash.text.TextField;
 import flixel.FlxG;
