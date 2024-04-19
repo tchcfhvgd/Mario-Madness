@@ -1465,11 +1465,15 @@ class MarioSubstate extends MusicBeatSubstate
 						ClientPrefs.noDiscord = !ClientPrefs.noDiscord;
 						if (ClientPrefs.noDiscord)
 						{
+							#if desktop
 							DiscordClient.start();
+							#end
 						}
 						else
 						{
+							#if desktop
 							DiscordClient.shutdown();
+							#end
 						}
 				}
 				FlxG.sound.play(Paths.sound('scrollMenu'));
