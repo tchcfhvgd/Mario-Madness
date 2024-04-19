@@ -22,6 +22,11 @@ import java.vm.Gc;
 import neko.vm.Gc;
 #end
 
+#if android
+import android.content.Context;
+import android.os.Build;
+#end
+
 class Main extends Sprite {
 	public static var initialState:Class<FlxState> = TitleState; // The FlxState the game starts with.
 	public static var gameWidth:Int = 1280; // Width of the game in pixels (might be less / more in actual pixels depending on your zoom).
