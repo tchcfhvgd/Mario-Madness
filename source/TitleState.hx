@@ -57,6 +57,10 @@ class TitleState extends MusicBeatState {
 	var startTime:Float;
 
 	override public function create():Void {
+		#if android
+		FlxG.android.preventDefaultKeys = [BACK];
+		#end
+		
 		persistentUpdate = false;
 
 		if (!initialized) {
@@ -177,15 +181,14 @@ class TitleState extends MusicBeatState {
 		bottomGroup.cameras = [FlxG.camera];
 		add(bottomGroup);
 
-		floor = new FlxSprite(0, 0).loadGraphic(Paths.image('title/floor'));
+		floor = new FlxSprite(100, 340).loadGraphic(Paths.image('title/floor'));
 		floor.antialiasing = ClientPrefs.globalAntialiasing;
 		floor.scale.set(0.95, 0.95);
 		floor.updateHitbox();
-		floor.setPosition(-40.0567375886525, 360); // bros being specific
 		bottomGroup.add(floor);
 
 		for (i in 0...2) {
-			var hand:FlxSprite = new FlxSprite(96 + (601 * i), 125);
+			var hand:FlxSprite = new FlxSprite(280 + (601 * i), 125);
 			hand.antialiasing = ClientPrefs.globalAntialiasing;
 			hand.frames = Paths.getSparrowAtlas("title/titleAssets");
 			hand.animation.addByPrefix("idle", "Spookihand", 24, true);
@@ -202,7 +205,7 @@ class TitleState extends MusicBeatState {
 			hands.push(hand);
 		}
 
-		bf = new FlxSprite(303, 312);
+		bf = new FlxSprite(503, 312);
 		bf.antialiasing = ClientPrefs.globalAntialiasing;
 		bf.frames = Paths.getSparrowAtlas("title/titleAssets");
 		bf.animation.addByPrefix("idle", "BF", 24, false);
@@ -211,7 +214,7 @@ class TitleState extends MusicBeatState {
 		bf.updateHitbox();
 		bottomGroup.add(bf);
 
-		gf = new FlxSprite(705, 230);
+		gf = new FlxSprite(905, 230);
 		gf.antialiasing = ClientPrefs.globalAntialiasing;
 		gf.frames = Paths.getSparrowAtlas("title/titleAssets");
 		gf.animation.addByPrefix("idle", "GF", 24, false);
@@ -390,7 +393,7 @@ class TitleState extends MusicBeatState {
 								windowPos = CoolUtil.getCenterWindowPoint();
 								startTime = Sys.time();
 								
-								windowTwn = FlxTween.tween(windowRes, {x: 1280, y: 720}, 0.3 * 4, {ease: FlxEase.circInOut, onUpdate: (_) -> {
+							        windowTwn = FlxTween.tween(windowRes, {x: 1280, y: 720}, 0.3 * 4, {ease: FlxEase.circInOut, onUpdate: (_) -> {
 									FlxG.resizeWindow(Std.int(windowRes.x), Std.int(windowRes.y));
 									CoolUtil.centerWindowOnPoint(windowPos);
 									if ((Sys.time() - startTime) > 1.35) {
@@ -402,8 +405,7 @@ class TitleState extends MusicBeatState {
 										completeWindowTwn();
 									}
 								});
-
-								FlxG.camera.visible = false;
+					                        FlxG.camera.visible = false;
 								camHUD.visible = false;
 							}
 						});
@@ -417,16 +419,6 @@ class TitleState extends MusicBeatState {
 
 	function completeWindowTwn(){
 		FlxG.updateFramerate = ClientPrefs.framerate;
-		BaseScaleMode.ogSize = FlxPoint.get(1280, 720); // fuck you haxeflixel
-
-		FlxG.scaleMode = new flixel.system.scaleModes.RatioScaleMode();
-
-		FlxG.resizeWindow(1280, 720);
-		FlxG.resizeGame(1280, 720);
-		CoolUtil.centerWindowOnPoint(windowPos);
-		
-		windowPos.put(); windowPos.put(); baseCamPos.put();
-
 		FlxG.mouse.visible = true;
 		MusicBeatState.switchState(new MainMenuState());
 	};
