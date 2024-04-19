@@ -3,9 +3,8 @@ package;
 #if MODS_ALLOWED
 import sys.FileSystem;
 import sys.io.File;
-#else
-import openfl.utils.Assets;
 #end
+import openfl.utils.Assets;
 import Song;
 import haxe.Json;
 import haxe.format.JsonParser;
