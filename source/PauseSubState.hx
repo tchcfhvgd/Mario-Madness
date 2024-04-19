@@ -540,7 +540,9 @@ class PauseSubState extends MusicBeatSubstate
 							Lib.application.window.maximized = false;
 							Lib.application.window.resize(restsizeX, restsizeY);
 							Lib.application.window.move(restX, restY);
+							#if desktop
 							CppAPI.setWallpaper('old');
+							#end
 						}
 
 						if (PlayState.getspeed != 0)
