@@ -186,7 +186,7 @@ class MainMenuState extends MusicBeatState {
 
 		bloom = new BloomShader();
 		bloom.Size.value = [1];
-		FlxG.camera.setFilters([new ShaderFilter(ntsc = new NTSCGlitch(0.4)), new ShaderFilter(bloom)]);
+		FlxG.camera.setFilters([new ShaderFilter(ntsc = new NTSCGlitch(0.4))/*, new ShaderFilter(bloom)*/]);
 
 		var stagenumb:Int = ClientPrefs.menuBG - 1;
 
