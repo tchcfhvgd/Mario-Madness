@@ -6,6 +6,7 @@ import flixel.FlxGame;
 import flixel.FlxState;
 import flixel.addons.transition.FlxTransitionableState;
 import openfl.Assets;
+import haxe.io.Path;
 import openfl.Lib;
 import openfl.display.FPS;
 import openfl.display.Sprite;
@@ -42,6 +43,15 @@ class Main extends Sprite {
 	public function new() {
 		super();
 
+		#if android
+		if (VERSION.SDK_INT > 30)
+			Sys.setCwd(Path.addTrailingSlash(Context.getObbDir()));
+		else
+			Sys.setCwd(Path.addTrailingSlash(Context.getExternalFilesDir()));
+		#elseif ios
+		Sys.setCwd(System.documentsDirectory);
+		#end
+		
 		if (stage != null) {
 			init();
 		}
