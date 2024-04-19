@@ -5892,7 +5892,9 @@ class PlayState extends MusicBeatState
 			CoolUtil.precacheSound('psAtt');
 		}
 
-		discName = PlayState.SONG.song.replace(' ', '');
+#if desktop
+discName = PlayState.SONG.song.replace(' ', '');
+#end
 
 		#if desktop
 		// Updating Discord Rich Presence.
@@ -15937,7 +15939,9 @@ CppAPI.restoreWindows();
 						ease: FlxEase.expoIn,
 						onComplete: function(twn:FlxTween)
 						{
+							#if desktop
 							CppAPI.setTransparency(Lib.application.window.title, 0x001957);
+							#end
 							startresize = false;
 							Lib.application.window.borderless = false;
 							Lib.application.window.resize(fsX, fsY);
