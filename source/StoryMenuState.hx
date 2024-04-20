@@ -323,10 +323,6 @@ class StoryMenuState extends MusicBeatSubstate
 		grpCut.visible = false;
 		FlxG.sound.play(Paths.sound('scrollMenu'), 1);
 		if(option == 0){
-			if (FlxG.mouse.justPressed && quieto)
-		{
-			selectWeek();
-		}
 			chars.visible = true;
 			titleText.visible = true;
 			songsText.visible = true;
