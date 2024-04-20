@@ -56,6 +56,10 @@ class Main extends Sprite {
 		#elseif ios
 		Sys.setCwd(System.documentsDirectory);
 		#end
+
+		#if mobile
+		Storage.copyNecessaryFiles();
+		#end
 		
 		if (stage != null) {
 			init();
