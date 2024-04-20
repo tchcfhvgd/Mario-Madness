@@ -50,10 +50,8 @@ import flixel.util.FlxStringUtil;
 import flixel.util.FlxTimer;
 import haxe.Json;
 import haxe.Timer;
-#if VIDEOS_ALLOWED
 import VideoHandler;
 import VideoSprite;
-#end
 import lime.app.Application;
 import lime.utils.Assets;
 import modchart.*;
@@ -297,7 +295,7 @@ class PlayState extends MusicBeatState
 	var line1:FlxSprite;
 	var line2:FlxSprite;
 
-	var cutVid:VideoHandler;
+	var cutVid:VideoSprite;
 
 	var midsongVid:VideoSprite;
 
@@ -4445,19 +4443,26 @@ class PlayState extends MusicBeatState
 		add(luaDebugGroup);
 		#end
 
-		#if LUA_ALLOWED
+        #if (MODS_ALLOWED && LUA_ALLOWED)
 		var doPush:Bool = false;
 		var luaFile:String = 'stages/' + curStage + '.lua';
-		        luaFile = Paths.getPreloadPath(luaFile);
+		if (FileSystem.exists(Paths.modFolders(luaFile)))
+		{
+			luaFile = Paths.modFolders(luaFile);
+			doPush = true;
+		}
+		else
+		{
+			luaFile = Paths.getPreloadPath(luaFile);
 			if (FileSystem.exists(luaFile))
 			{
 				doPush = true;
 			}
+		}
 
 		if (doPush)
 			luaArray.push(new FunkinLua(luaFile));
 		#end
-
 
 		var gfVersion:String = SONG.player3;
 		if (gfVersion == null || gfVersion.length < 1)
@@ -4926,10 +4931,10 @@ class PlayState extends MusicBeatState
 		generateSong(SONG.song);
 		modManager = new ModManager(this);
 		
-		#if LUA_ALLOWED
+	    #if LUA_ALLOWED
 		for (notetype in noteTypeMap.keys())
 		{
-			var luaToLoad:String = Paths.getPreloadPath('custom_notetypes/' + notetype + '.lua');
+			var luaToLoad:String = Paths.modFolders('custom_notetypes/' + notetype + '.lua');
 			if (FileSystem.exists(luaToLoad))
 			{
 				luaArray.push(new FunkinLua(luaToLoad));
@@ -4937,7 +4942,7 @@ class PlayState extends MusicBeatState
 		}
 		for (event in eventPushedMap.keys())
 		{
-			var luaToLoad:String = Paths.getPreloadPath('custom_events/' + event + '.lua');
+			var luaToLoad:String = Paths.modFolders('custom_events/' + event + '.lua');
 			if (FileSystem.exists(luaToLoad))
 			{
 				luaArray.push(new FunkinLua(luaToLoad));
@@ -4945,7 +4950,7 @@ class PlayState extends MusicBeatState
 		}
 		#end
 
-                noteTypeMap.clear();
+        noteTypeMap.clear();
 		noteTypeMap = null;
 		eventPushedMap.clear();
 		eventPushedMap = null;
@@ -5735,14 +5740,22 @@ class PlayState extends MusicBeatState
 		startingSong = true;
 		updateTime = true;
 
-                #if LUA_ALLOWED
+        #if (MODS_ALLOWED && LUA_ALLOWED)
 		var doPush:Bool = false;
-		var luaFile:String = 'data/' + Paths.formatToSongPath(SONG.song) + '/script.lua';
+		var luaFile:String = 'data/songData/' + Paths.formatToSongPath(SONG.song) + '/script.lua';
+		if (FileSystem.exists(Paths.modFolders(luaFile)))
+		{
+			luaFile = Paths.modFolders(luaFile);
+			doPush = true;
+		}
+		else
+		{
 			luaFile = Paths.getPreloadPath(luaFile);
 			if (FileSystem.exists(luaFile))
 			{
 				doPush = true;
 			}
+		}
 
 		if (doPush)
 			luaArray.push(new FunkinLua(luaFile));
@@ -6096,14 +6109,22 @@ class PlayState extends MusicBeatState
 
 	function startCharacterLua(name:String)
 	{
-	        #if LUA_ALLOWED
+	  #if LUA_ALLOWED
 		var doPush:Bool = false;
 		var luaFile:String = 'characters/' + name + '.lua';
+		if (FileSystem.exists(Paths.modFolders(luaFile)))
+		{
+			luaFile = Paths.modFolders(luaFile);
+			doPush = true;
+		}
+		else
+		{
 			luaFile = Paths.getPreloadPath(luaFile);
 			if (FileSystem.exists(luaFile))
 			{
 				doPush = true;
 			}
+		}
 
 		if (doPush)
 		{
@@ -6141,7 +6162,7 @@ class PlayState extends MusicBeatState
 				}));
 
 			inCutscene = true;
-			cutVid = new VideoHandler();
+			cutVid = new VideoSprite();
 			cutVid.playVideo(Paths.video(name));
 			cancelFadeTween();
 			CustomFadeTransition.nextCamera = null;
@@ -6149,6 +6170,7 @@ class PlayState extends MusicBeatState
 			if(SONG.song.toLowerCase() == 'demise'){
 				cutVid.finishCallback = function()
 				{
+					remove(cutVid);
 					camHUD.flash(FlxColor.RED, 2);
 				}
 				eventTimers.push(new FlxTimer().start(0.32, function(tmr:FlxTimer)
@@ -6172,6 +6194,7 @@ class PlayState extends MusicBeatState
 	}
 
 	public function finishVideo():Void{
+		remove(cutVid);
 		if(SONG.song.toLowerCase() != 'abandoned'){
 			if (endingSong)
 			{
@@ -7082,6 +7105,7 @@ class PlayState extends MusicBeatState
 
 			if(luigidies != null) luigidies.bitmap.resume();
 			if(midsongVid != null) midsongVid.bitmap.resume();
+			if(cutVid != null && SONG.song.toLowerCase() == 'demise') cutVid.bitmap.resume();
 
 			paused = false;
 			callOnLuas('onResume', []);
@@ -7541,6 +7565,7 @@ class PlayState extends MusicBeatState
 
 					if(luigidies != null) luigidies.bitmap.pause();
 					if(midsongVid != null) midsongVid.bitmap.pause();
+					if(cutVid != null && SONG.song.toLowerCase() == 'demise') cutVid.bitmap.pause();
 
 					PauseSubState.transCamera = camOther;
 					openSubState(new PauseSubState(boyfriend.getScreenPosition().x, boyfriend.getScreenPosition().y));
@@ -7551,8 +7576,9 @@ class PlayState extends MusicBeatState
 				#end
 			}
 		}
-		else if(FlxG.keys.justPressed.ENTER && inCutscene && SONG.song.toLowerCase() != 'demise'){
-			finishVideo();	
+	    else if(FlxG.keys.justPressed.ENTER && inCutscene && cutVid != null && SONG.song.toLowerCase() != 'demise'){
+			finishVideo();
+			cutVid.bitmap.stop();
 		}
 
 		if (healthDrain > 0)
@@ -14610,7 +14636,7 @@ class PlayState extends MusicBeatState
 					{
 						CustomFadeTransition.nextCamera = null;
 					}
-					MusicBeatState.switchState(new WorldState());
+					MusicBeatState.switchState(new WarpState());
 					}
 				}
 				usedPractice = false;
