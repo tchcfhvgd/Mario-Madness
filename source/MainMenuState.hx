@@ -186,7 +186,6 @@ class MainMenuState extends MusicBeatState {
 
 		bloom = new BloomShader();
 		bloom.Size.value = [1];
-		FlxG.camera.setFilters([new ShaderFilter(ntsc = new NTSCGlitch(0.4))/*, new ShaderFilter(bloom)*/]);
 
 		var stagenumb:Int = ClientPrefs.menuBG - 1;
 
@@ -767,7 +766,6 @@ class MainMenuState extends MusicBeatState {
 			star.x = Math.PI + (star.width * 1.25); star.alpha = 0; // TO STOP STUPID FUCKING GLITCH
 			FlxTween.tween(star, {x: star.x - (star.width * 1.25), alpha: 1}, 0.4, {ease: FlxEase.circOut, startDelay: 0.1 + (0.1 * star.ID)});
 		}
-		FlxG.camera.setFilters([new ShaderFilter(ntsc), new ShaderFilter(bloom)]);
 
 		for (spr in [fondo11, estatica]) {
 			if (spr.alpha >= 0.99) return;
