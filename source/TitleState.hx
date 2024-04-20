@@ -60,12 +60,6 @@ class TitleState extends MusicBeatState {
 		#if android
 		FlxG.android.preventDefaultKeys = [BACK];
 		#end
-		
-		ClientPrefs.worlds = [3, 7, 5, 6, 3];
-		ClientPrefs.worldsALT = [0, 2, 0, 3, 0];
-		ClientPrefs.storySave = [for(i in 0... 10) true];
-		ClientPrefs.saveSettings();
-		//先全解锁
 			
 		persistentUpdate = false;
 
