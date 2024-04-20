@@ -232,7 +232,7 @@ class StoryMenuState extends MusicBeatSubstate
 	override function update(elapsed:Float)
 	{
 		tottalTimer += elapsed;
-		if (controls.ACCEPT && quieto)
+		if (FlxG.mouse.justPressed && quieto)
 		{
 			selectWeek();
 		}
@@ -250,7 +250,7 @@ class StoryMenuState extends MusicBeatSubstate
 		overlay.scale.set(1/FlxG.camera.zoom, 1/FlxG.camera.zoom);
 		flicker.scale.set(1/FlxG.camera.zoom, 1/FlxG.camera.zoom);
 
-		if (controls.BACK && quieto)
+		if (controls.BACK #if android || FlxG.android.justReleased.BACK #end && quieto)
 		{
 			PlayState.isStoryMode = false;
 			FlxG.sound.play(Paths.sound('cancelMenu'));
