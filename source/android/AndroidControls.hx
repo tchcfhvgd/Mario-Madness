@@ -103,7 +103,6 @@ class AndroidControls extends FlxSpriteGroup {
 			case 3:
 				vpad = new FlxVirtualPad(DUO, NONE, 0.75, ClientPrefs.globalAntialiasing);
 				add(vpad);		
-				add(hbox);
 			case 4:
 			  newhbox = new FlxNewHitbox();
 			  add(newhbox);
