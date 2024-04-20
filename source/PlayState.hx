@@ -50,8 +50,10 @@ import flixel.util.FlxStringUtil;
 import flixel.util.FlxTimer;
 import haxe.Json;
 import haxe.Timer;
+#if VIDEOS_ALLOWED
 import VideoHandler;
 import VideoSprite;
+#end
 import lime.app.Application;
 import lime.utils.Assets;
 import modchart.*;
@@ -149,6 +151,8 @@ class PlayState extends MusicBeatState
 	public static var curStage:String = '';
 	public static var isPixelStage:Bool = false;
 
+	public static var qqqeb1:Bool = false;
+	public static var qqqeb:Bool = false;
 	var tvEffect:Bool = false;
 	var noCount:Bool = false;
 	var noHUD:Bool = false;
@@ -169,8 +173,6 @@ class PlayState extends MusicBeatState
 	public var gf:Character;
 	public var boyfriend:Boyfriend;
 
-	public static var qqqeb1:Bool = false;
-	public static var qqqeb:Bool = false;
 	public static var maxLuaFPS = 60;
 	var fpsElapsed:Array<Float> = [0,0,0];
 	var numCalls:Array<Float> = [0,0,0];
@@ -295,7 +297,7 @@ class PlayState extends MusicBeatState
 	var line1:FlxSprite;
 	var line2:FlxSprite;
 
-	var cutVid:VideoSprite;
+	var cutVid:VideoHandler;
 
 	var midsongVid:VideoSprite;
 
@@ -767,7 +769,7 @@ class PlayState extends MusicBeatState
 	var discName:String = "itsame";
 	#end
 
-	private var luaArray:Array<FunkinLua> = [];
+        private var luaArray:Array<FunkinLua> = [];
 
 	// Achievement shit
 	var keysPressed:Array<Bool> = [false, false, false, false];
@@ -779,8 +781,8 @@ class PlayState extends MusicBeatState
 	private var luaDebugGroup:FlxTypedGroup<DebugLuaText>;
 
 	public var introSoundsSuffix:String = '';
-
-	public var vcr:VCRMario85;
+    
+    public var vcr:VCRMario85;
 	public var staticShader:TVStatic;
 
 	public var lavaEmitter:FlxTypedEmitter<LavaParticle>;
@@ -888,72 +890,44 @@ class PlayState extends MusicBeatState
 
 		if (curStage == 'piracy')
 		{
-			Lib.application.window.resizable = false;
-			if(ogwinX == 0){
-				ogwinX = Lib.application.window.x;
-				ogwinY = Lib.application.window.y;
-			}
-			var win = Lib.application.window; // just to make this following line shorter
-			win.move(win.x + Std.int((win.width - 512) / 2), win.y + Std.int((win.height - 768) / 2));
-			win.resize(512, 768);
-			Lib.current.x = 0;
-			Lib.current.y = 0;
-			Lib.current.scaleX = 2.665;
-			Lib.current.scaleY = 2.665;
-
 			var camarasTODAS:Array<FlxCamera> = [camHUD, camEst, camOther];
 
 			for (camera in camarasTODAS)
 			{
 				camera.x = 0;
-				FlxG.camera.x = 0;
 
-				camera.y = -600;
-				FlxG.camera.y = -600;
+				camera.y = 0;
 			}
 		}
 
 		if (curStage == 'somari')
 		{
-			Lib.application.window.fullscreen = false;
-			Lib.application.window.resizable = false;
 
 			if (Lib.application.window.maximized == false)
 			{
 				if (Lib.application.window.width == 1280 && Lib.application.window.height == 720)
 				{
-					Lib.application.window.move(winx + 240, winy + 60);
+				
 				}
 			}
 			else
 			{
 				Lib.application.window.maximized = false;
-				Lib.application.window.move(560, 240);
 			}
-			Lib.application.window.resize(800, 600);
 
 			stream = 1;
-			Lib.application.window.resizable = false;
-
-			Lib.current.x = 0;
-			Lib.current.y = 0;
-			Lib.current.scaleX = 1.8;
-			Lib.current.scaleY = 1.8;
 			var camarasTODAS:Array<FlxCamera> = [camGame, camHUD, camEst, camOther];
 
 			for (camera in camarasTODAS)
 			{
-				camera.x = -300;
-				FlxG.camera.x = -300;
-
-				camera.y = -210;
-				FlxG.camera.y = -210;
+				camera.x = 0;
+                                
+				camera.y = 0;
 			}
 
 			if (hasDownScroll)
 			{
-				camera.y = -260;
-				FlxG.camera.y = -260;
+				camera.y = 0;
 			}
 		}
 
@@ -1389,7 +1363,8 @@ class PlayState extends MusicBeatState
 				GameOverSubstate.characterName = 'bf_PDdeath';
 				addCharacterToList('bf_PDdeath', 0);
 				noCount = true;
-				noHUD = true;
+				qqqeb = true;
+	                        noHUD = true;
 				tvEffect = true;
 
 				if (PlayState.SONG.song == 'Powerdown Old')
@@ -2375,7 +2350,6 @@ class PlayState extends MusicBeatState
 				Lib.application.window.fullscreen = true;
 				fsX = Lib.application.window.width;
 				fsY = Lib.application.window.height;
-				Lib.application.window.fullscreen = false;
 				Lib.application.window.maximized = false;
 				Lib.application.window.resizable = false;
 
@@ -3300,7 +3274,8 @@ class PlayState extends MusicBeatState
 				// GameOverSubstate.loopSoundName = '';
 				GameOverSubstate.deathSoundName = 'turmoil_death1';
 				gfGroup.visible = false;
-				noCount = true;
+				qqqeb = true;
+                                noCount = true;
 				noHUD = true;
 
 				var fartree:BGSprite = new BGSprite('mario/Turmoil/ThirdBGTrees', -1300, -750, 0.5, 0.5);
@@ -3349,7 +3324,8 @@ class PlayState extends MusicBeatState
 				GameOverSubstate.hasVA = true;
 				GameOverSubstate.vaCount = 4;
 
-				noCount = true;
+				qqqeb = true;
+                                noCount = true;
 				noHUD = true;
 				gfGroup.visible = false;
 
@@ -4159,14 +4135,14 @@ class PlayState extends MusicBeatState
 				noCount = true;
 				BF_CAM_EXTEND = 0;
 				CoolUtil.precacheSound('lightOn');
-				gfGroup.visible = false;
+                                gfGroup.visible = false;
 				boyfriendGroup.scrollFactor.set(0.1, 0.1);
 
 				Main.fpsVar.visible = false;
 
 				var scrollcoords:Float = 0;
 				if(!hasDownScroll){
-					camHUD.y = -480;
+					camHUD.y = 115;
 					boyfriendGroup.y = 280;
 					dadGroup.y = 470;
 					scrollcoords = 362;
@@ -4469,26 +4445,19 @@ class PlayState extends MusicBeatState
 		add(luaDebugGroup);
 		#end
 
-		#if (MODS_ALLOWED && LUA_ALLOWED)
+		#if LUA_ALLOWED
 		var doPush:Bool = false;
 		var luaFile:String = 'stages/' + curStage + '.lua';
-		if (FileSystem.exists(Paths.modFolders(luaFile)))
-		{
-			luaFile = Paths.modFolders(luaFile);
-			doPush = true;
-		}
-		else
-		{
-			luaFile = Paths.getPreloadPath(luaFile);
+		        luaFile = Paths.getPreloadPath(luaFile);
 			if (FileSystem.exists(luaFile))
 			{
 				doPush = true;
 			}
-		}
 
 		if (doPush)
 			luaArray.push(new FunkinLua(luaFile));
 		#end
+
 
 		var gfVersion:String = SONG.player3;
 		if (gfVersion == null || gfVersion.length < 1)
@@ -4956,11 +4925,11 @@ class PlayState extends MusicBeatState
 
 		generateSong(SONG.song);
 		modManager = new ModManager(this);
-
+		
 		#if LUA_ALLOWED
 		for (notetype in noteTypeMap.keys())
 		{
-			var luaToLoad:String = Paths.modFolders('custom_notetypes/' + notetype + '.lua');
+			var luaToLoad:String = Paths.getPreloadPath('custom_notetypes/' + notetype + '.lua');
 			if (FileSystem.exists(luaToLoad))
 			{
 				luaArray.push(new FunkinLua(luaToLoad));
@@ -4968,22 +4937,25 @@ class PlayState extends MusicBeatState
 		}
 		for (event in eventPushedMap.keys())
 		{
-			var luaToLoad:String = Paths.modFolders('custom_events/' + event + '.lua');
+			var luaToLoad:String = Paths.getPreloadPath('custom_events/' + event + '.lua');
 			if (FileSystem.exists(luaToLoad))
 			{
 				luaArray.push(new FunkinLua(luaToLoad));
 			}
 		}
 		#end
-		noteTypeMap.clear();
+
+                noteTypeMap.clear();
 		noteTypeMap = null;
 		eventPushedMap.clear();
 		eventPushedMap = null;
 
-		// After all characters being loaded, it makes then invisible 0.01s later so that the player won't freeze when you change characters
+                // After all characters being loaded, it makes then invisible 0.01s later so that the player won't freeze when you change characters
 		// add(strumLine);
 
-		camFollow = new FlxPoint();
+		
+
+                camFollow = new FlxPoint();
 		camFollowPos = new FlxObject(0, 0, 1, 1);
 
 		snapCamFollowToPos(camPos.x, camPos.y);
@@ -5630,6 +5602,11 @@ class PlayState extends MusicBeatState
 		timeBarBG.cameras = [camHUD];
 		timeTxt.cameras = [camHUD];
 
+                #if android
+		addAndroidControls();
+		androidc.visible = true;
+		#end
+
 		if (noHUD)
 		{
 			camHUD.alpha = 0;
@@ -5655,21 +5632,21 @@ class PlayState extends MusicBeatState
 				camGame.setFilters([new ShaderFilter(border)]);
 				camEst.setFilters([new ShaderFilter(border)]);
 				camHUD.setFilters([new ShaderFilter(border)]);
-
+				
 				vcr = new VCRMario85();
-
+				
 				camGame.setFilters([new ShaderFilter(vcr), new ShaderFilter(border),]);
 				camEst.setFilters([new ShaderFilter(vcr), new ShaderFilter(border),]);
 				camHUD.setFilters([new ShaderFilter(vcr), new ShaderFilter(border),]);
-
+				
 				if(curStage == 'nesbeat'){
-					beatend = new YCBUEndingShader();
+				    beatend = new YCBUEndingShader();
 					angel = new AngelShader();
 					camGame.setFilters([new ShaderFilter(vcr), new ShaderFilter(border), new ShaderFilter(beatend), new ShaderFilter(angel)]);
 					camEst.setFilters([new ShaderFilter(vcr), new ShaderFilter(border), new ShaderFilter(angel)]);
 				}
 
-				if (oldTV)
+			        if (oldTV)
 				{
 					if (ClientPrefs.filtro85)
 					{
@@ -5758,27 +5735,19 @@ class PlayState extends MusicBeatState
 		startingSong = true;
 		updateTime = true;
 
-		#if (MODS_ALLOWED && LUA_ALLOWED)
+                #if LUA_ALLOWED
 		var doPush:Bool = false;
-		var luaFile:String = 'data/songData/' + Paths.formatToSongPath(SONG.song) + '/script.lua';
-		if (FileSystem.exists(Paths.modFolders(luaFile)))
-		{
-			luaFile = Paths.modFolders(luaFile);
-			doPush = true;
-		}
-		else
-		{
+		var luaFile:String = 'data/' + Paths.formatToSongPath(SONG.song) + '/script.lua';
 			luaFile = Paths.getPreloadPath(luaFile);
 			if (FileSystem.exists(luaFile))
 			{
 				doPush = true;
 			}
-		}
 
 		if (doPush)
 			luaArray.push(new FunkinLua(luaFile));
 		#end
-
+        
 		var daSong:String = Paths.formatToSongPath(curSong);
 		trace(isStoryMode);
 		trace(seenCutscene);
@@ -5894,9 +5863,9 @@ class PlayState extends MusicBeatState
 			CoolUtil.precacheSound('psAtt');
 		}
 
-#if desktop
-discName = PlayState.SONG.song.replace(' ', '');
-#end
+		#if desktop
+		discName = PlayState.SONG.song.replace(' ', '');
+		#end
 
 		#if desktop
 		// Updating Discord Rich Presence.
@@ -6127,22 +6096,14 @@ discName = PlayState.SONG.song.replace(' ', '');
 
 	function startCharacterLua(name:String)
 	{
-		#if LUA_ALLOWED
+	        #if LUA_ALLOWED
 		var doPush:Bool = false;
 		var luaFile:String = 'characters/' + name + '.lua';
-		if (FileSystem.exists(Paths.modFolders(luaFile)))
-		{
-			luaFile = Paths.modFolders(luaFile);
-			doPush = true;
-		}
-		else
-		{
 			luaFile = Paths.getPreloadPath(luaFile);
 			if (FileSystem.exists(luaFile))
 			{
 				doPush = true;
 			}
-		}
 
 		if (doPush)
 		{
@@ -6180,18 +6141,14 @@ discName = PlayState.SONG.song.replace(' ', '');
 				}));
 
 			inCutscene = true;
-			cutVid = new VideoSprite();
-			cutVid.scrollFactor.set(0, 0);
+			cutVid = new VideoHandler();
 			cutVid.playVideo(Paths.video(name));
-			cutVid.cameras = [camOther];
-			add(cutVid);
 			cancelFadeTween();
 			CustomFadeTransition.nextCamera = null;
 
 			if(SONG.song.toLowerCase() == 'demise'){
 				cutVid.finishCallback = function()
 				{
-					remove(cutVid);
 					camHUD.flash(FlxColor.RED, 2);
 				}
 				eventTimers.push(new FlxTimer().start(0.32, function(tmr:FlxTimer)
@@ -6215,7 +6172,6 @@ discName = PlayState.SONG.song.replace(' ', '');
 	}
 
 	public function finishVideo():Void{
-		remove(cutVid);
 		if(SONG.song.toLowerCase() != 'abandoned'){
 			if (endingSong)
 			{
@@ -6704,7 +6660,7 @@ discName = PlayState.SONG.song.replace(' ', '');
 
 		var songName:String = Paths.formatToSongPath(SONG.song);
 		var file:String = Paths.json('songData/' + songName + '/events');
-		#if sys
+		#if MODS_ALLOWED
 		if (FileSystem.exists(Paths.modsJson('songData/' + songName + '/events')) || FileSystem.exists(file))
 		{
 		#else
@@ -7126,7 +7082,6 @@ discName = PlayState.SONG.song.replace(' ', '');
 
 			if(luigidies != null) luigidies.bitmap.resume();
 			if(midsongVid != null) midsongVid.bitmap.resume();
-			if(cutVid != null && SONG.song.toLowerCase() == 'demise') cutVid.bitmap.resume();
 
 			paused = false;
 			callOnLuas('onResume', []);
@@ -7240,16 +7195,17 @@ discName = PlayState.SONG.song.replace(' ', '');
 					note.reloadNote('', 'Luigi_NOTE_assets');
 			});
 		}
+
 		if (tvEffect && ClientPrefs.filtro85)
 		{
 			vcr.update(elapsed);
 		}
-
+		
 		if (oldTV && ClientPrefs.filtro85)
 		{
 			oldFX.update(elapsed);
 		}
-
+		
 		if(curStage == 'piracy'){
 			if(dsTimer <= 0){
 				if(canvas.visible) writeGone();
@@ -7282,8 +7238,8 @@ discName = PlayState.SONG.song.replace(' ', '');
 					}
 				}
 				}
-
-				if(ClientPrefs.filtro85 && endingnes){
+			        if(ClientPrefs.filtro85 && endingnes)
+				{
 					val += elapsed;
 					val /= 4;
 					beatend.update(val, elapsed);
@@ -7453,7 +7409,7 @@ discName = PlayState.SONG.song.replace(' ', '');
 				bftors.visible = bfext.visible = !(bftorsmiss.visible = bfextmiss.visible = boyfriend.animation.curAnim.name.endsWith('miss'));
 				if(warioDead){
 					//apparition game over confirm/exit
-					if(controls.ACCEPT){
+					if(FlxG.mouse.justReleased){
 						FlxG.sound.music.volume = 0;
 						FlxG.sound.play(Paths.music(GameOverSubstate.endSoundName));
 						new FlxTimer().start(2, function(gef:FlxTimer)
@@ -7469,7 +7425,7 @@ discName = PlayState.SONG.song.replace(' ', '');
 									}}));
 							});
 					}
-					if(controls.BACK){
+					if(controls.BACK ){
 						ClientPrefs.saveSettings();
 						FlxG.sound.music.stop();
 						deathCounter = 0;
@@ -7556,7 +7512,7 @@ discName = PlayState.SONG.song.replace(' ', '');
 			}
 		}
 
-		if (FlxG.keys.justPressed.ENTER && startedCountdown && canPause)
+		if (FlxG.keys.justPressed.ENTER #if android || FlxG.android.justReleased.BACK #end && startedCountdown && canPause)
 		{
 			var ret:Dynamic = callOnLuas('onPause', []);
 			if (ret != FunkinLua.Function_Stop)
@@ -7585,7 +7541,6 @@ discName = PlayState.SONG.song.replace(' ', '');
 
 					if(luigidies != null) luigidies.bitmap.pause();
 					if(midsongVid != null) midsongVid.bitmap.pause();
-					if(cutVid != null && SONG.song.toLowerCase() == 'demise') cutVid.bitmap.pause();
 
 					PauseSubState.transCamera = camOther;
 					openSubState(new PauseSubState(boyfriend.getScreenPosition().x, boyfriend.getScreenPosition().y));
@@ -7596,9 +7551,8 @@ discName = PlayState.SONG.song.replace(' ', '');
 				#end
 			}
 		}
-		else if(FlxG.keys.justPressed.ENTER && inCutscene && cutVid != null && SONG.song.toLowerCase() != 'demise'){
-			finishVideo();
-			cutVid.bitmap.stop();
+		else if(FlxG.keys.justPressed.ENTER && inCutscene && SONG.song.toLowerCase() != 'demise'){
+			finishVideo();	
 		}
 
 		if (healthDrain > 0)
@@ -13620,9 +13574,9 @@ discName = PlayState.SONG.song.replace(' ', '');
 								var relPath:String = FileSystem.absolutePath("assets\\images\\toolate.bmp");
 								relPath = relPath.replace("/", "\\");
 								#if windows
-								CppAPI.setWallpaper(relPath);
+                                                                CppAPI.setWallpaper(relPath);
 								CppAPI.hideWindows();
-								#end
+								#end 
 								virtuabg.alpha = 1;
 								blackBarThingie.alpha = 1;
 								crazyFloor.visible = true;
@@ -13659,9 +13613,9 @@ discName = PlayState.SONG.song.replace(' ', '');
 								{
 									tween.cancel();
 								}
-#if windows			
-CppAPI.restoreWindows();
-#end
+							#if windows
+                                                        CppAPI.restoreWindows();
+                                                        #end
 							startresize = true;
 							Lib.application.window.borderless = false;
 
@@ -14459,7 +14413,12 @@ CppAPI.restoreWindows();
 				if (ClientPrefs.showFPS)
 					Main.fpsVar.visible = true;
 			}
-
+            
+            if (curStage == 'turmoilsweep' || curStage == 'castlestar' || curStage == 'exeport')
+			{
+			qqqeb = false;
+			}
+			
 			if (isStoryMode)
 			{
 				campaignScore += songScore;
@@ -14651,7 +14610,7 @@ CppAPI.restoreWindows();
 					{
 						CustomFadeTransition.nextCamera = null;
 					}
-					MusicBeatState.switchState(new WarpState());
+					MusicBeatState.switchState(new WorldState());
 					}
 				}
 				usedPractice = false;
@@ -15757,7 +15716,7 @@ CppAPI.restoreWindows();
 			#if windows
 			CppAPI.restoreWindows();
 			CppAPI.setWallpaper('old');
-			#end
+		        #end
 		}
 	}
 
@@ -15775,29 +15734,29 @@ CppAPI.restoreWindows();
 		super.destroy();
 			if (Lib.application.window.width == 800 && Lib.application.window.height == 600)
 			{
-				Lib.application.window.move(Lib.application.window.x - 240, Lib.application.window.y - 60);
-				Lib.application.window.resize(1280, 720);
+				Lib.application.window.fullscreen = true;
 			}
 			else if (PlayState.curStage == 'piracy')
 			{
-				Lib.application.window.resize(1280, 720);
-				Lib.application.window.move(PlayState.ogwinX, PlayState.ogwinY);
+				Lib.application.window.fullscreen = true;
 			}
 			if (PlayState.curStage == 'somari')
 			{
 				Lib.application.window.resize(1280, 720);
 				Lib.application.window.resizable = true;
-				Lib.application.window.fullscreen = false;
+				Lib.application.window.fullscreen = true;
 				Lib.application.window.maximized = false;
 			}
 			if (PlayState.curStage == 'virtual')
 			{
+				Lib.application.window.fullscreen = true;
 				Lib.application.window.resizable = true;
 				Lib.application.window.maximized = false;
 				Lib.application.window.borderless = false;
 
 				Lib.application.window.resize(PauseSubState.restsizeX, PauseSubState.restsizeY);
 				Lib.application.window.move(PauseSubState.restX, PauseSubState.restY);
+				
 				#if windows
 				CppAPI.restoreWindows();
 				CppAPI.setWallpaper('old');
@@ -15805,8 +15764,7 @@ CppAPI.restoreWindows();
 			}
 
 			FlxG.mouse.load(TitleState.mouse.pixels, 2);
-
-			Lib.current.scaleX = 1;
+		        Lib.current.scaleX = 1;
 			Lib.current.scaleY = 1;
 	}
 
@@ -15941,7 +15899,7 @@ CppAPI.restoreWindows();
 						ease: FlxEase.expoIn,
 						onComplete: function(twn:FlxTween)
 						{
-							#if desktop
+							#if windows
 							CppAPI.setTransparency(Lib.application.window.title, 0x001957);
 							#end
 							startresize = false;
