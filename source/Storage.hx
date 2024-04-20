@@ -16,6 +16,24 @@ class Storage
 	public static function copyNecessaryFiles():Void
 	{
 		#if LUA_ALLOWED
+		for (dir in ['custom_events', 'custom_notetypes'])
+		{
+			for (file in Assets.list().filter(folder -> folder.startsWith('mods/$dir')))
+			{
+				if (Path.extension(file) == 'lua' || (dir == 'custom_events' && Path.extension(file) == 'txt'))
+				{
+					// Ment for FNF's libraries system...
+					final shit:String = file.replace(file.substring(0, file.indexOf('/', 0) + 1), '');
+					final library:String = shit.replace(shit.substring(shit.indexOf('/', 0), shit.length), '');
+
+					@:privateAccess
+					Storage.copyFile(Assets.libraryPaths.exists(library) ? '$library:$file' : file, file);
+				}
+			}
+		}
+		#end
+		
+		#if LUA_ALLOWED
 		for (dir in ['characters', 'custom_events', 'custom_notetypes', 'data', 'stages'])
 		{
 			for (file in Assets.list().filter(folder -> folder.startsWith('assets/$dir')))
