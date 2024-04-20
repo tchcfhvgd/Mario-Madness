@@ -151,7 +151,7 @@ class PatchNotes extends MusicBeatState
 				}
 			});
 
-		if (controls.BACK)
+		if (controls.BACK #if android || FlxG.android.justReleased.BACK #end)
 			{
 				FlxG.sound.play(Paths.sound('cancelMenu'));
 				MusicBeatState.switchState(new MainMenuState());
@@ -229,7 +229,7 @@ class PatchNotes extends MusicBeatState
 	function changePatchNotes(ver:Int) {
 
 		FlxG.sound.play(Paths.sound('scrollMenu'), 0.4);
-		noteText.text = File.getContent(Paths.txt('Patchs/' + ver));
+		noteText.text = Assets.getText('assets/data/Patchs/' + ver + '.txt').trim();
 		noteText.visible = true;
 		noteText.y = 30;
 		pageBar.visible = true;
