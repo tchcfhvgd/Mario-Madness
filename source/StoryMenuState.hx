@@ -232,7 +232,7 @@ class StoryMenuState extends MusicBeatSubstate
 	override function update(elapsed:Float)
 	{
 		tottalTimer += elapsed;
-		if (FlxG.mouse.justPressed && quieto)
+		if (controls.ACCEPT && quieto)
 		{
 			selectWeek();
 		}
@@ -323,6 +323,10 @@ class StoryMenuState extends MusicBeatSubstate
 		grpCut.visible = false;
 		FlxG.sound.play(Paths.sound('scrollMenu'), 1);
 		if(option == 0){
+			if (FlxG.mouse.justPressed && quieto)
+		{
+			selectWeek();
+		}
 			chars.visible = true;
 			titleText.visible = true;
 			songsText.visible = true;
