@@ -39,7 +39,7 @@ class Main extends Sprite {
 	public static var fpsVar:FPS;
 
 	public static var skipNextDump:Bool = false;
-	public static var forceNoVramSprites:Bool = false;
+	public static var forceNoVramSprites:Bool = true;
 
 	public static function main():Void {
 		Lib.current.addChild(new Main());
