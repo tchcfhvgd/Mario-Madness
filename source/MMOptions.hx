@@ -826,7 +826,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 		'GRAPHICS',
 		'Low Quality',
 		'Anti-Aliasing',
-		'VRAM-Sprites',
+		'GPU Textures',
 		#if !html5
 		'Framerate', // Apparently 120FPS isn't correctly supported on Browser? Probably it has some V-Sync shit enabled by default, idk
 		#end
@@ -839,8 +839,8 @@ class PreferencesSubstate extends MusicBeatSubstate
 		'Hide HUD',
 		'Hide Song Length',
 		'Flashing Lights',
-		'Camera Zooms'
-		#if !mobile, 'FPS Counter' #end
+		'Camera Zooms', 
+		'FPS Counter'
 	];
 
 	private var grpOptions:FlxTypedGroup<Alphabet>;
@@ -1017,7 +1017,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 								spr.antialiasing = ClientPrefs.globalAntialiasing;
 							}
 						}
-					case 'VRAM-Sprites':
+					case 'GPU Textures':
 						ClientPrefs.vramSprites = !ClientPrefs.vramSprites;
 					case 'Note Splashes':
 						ClientPrefs.noteSplashes = !ClientPrefs.noteSplashes;
@@ -1141,8 +1141,8 @@ class PreferencesSubstate extends MusicBeatSubstate
 				daText = "If checked, images loaded will stay in memory\nuntil the game is closed, this increases memory usage,\nbut basically makes reloading times instant.";
 			case 'Anti-Aliasing':
 				daText = "If unchecked, disables anti-aliasing, increases performance\nat the cost of the graphics not looking as smooth.";
-			case 'VRAM-Sprites':
-				daText = "If checked, bitmaps will be stored on vram instead of both the vram and ram, good for preformance.";
+			case 'GPU Textures':
+				daText = "If checked, renders textures on the GPU instead,\ndecreasing memory usage.\n\n*Experimental, may cause issues.";
 			case 'Downscroll':
 				daText = "If checked, notes go Down instead of Up, simple enough."; // SI LO PROBÓ VAMOS LOS PIBEEES
 			case 'Middlescroll':
@@ -1225,7 +1225,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 						daValue = ClientPrefs.lowQuality;
 					case 'Anti-Aliasing':
 						daValue = ClientPrefs.globalAntialiasing;
-					case 'VRAM-Sprites':
+					case 'GPU Textures':
 						daValue = ClientPrefs.vramSprites;
 					case 'Note Splashes':
 						daValue = ClientPrefs.noteSplashes;
