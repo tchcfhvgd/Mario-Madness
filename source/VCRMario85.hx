@@ -80,10 +80,10 @@ class VCRMario85 extends FlxShader // https://www.shadertoy.com/view/ldjGzV and 
     float largeFuzzOffset = snoise(vec2(time*1.0,openfl_TextureCoordv.y*25.0))*0.001;
       float xOffset = (fuzzOffset + largeFuzzOffset);
 
-      float red =  texture(bitmap, vec2(openfl_TextureCoordv.x + xOffset - 0.003, openfl_TextureCoordv.y)).r;
-    float green = texture(bitmap, vec2(openfl_TextureCoordv.x + xOffset, openfl_TextureCoordv.y)).g;
-    float blue = texture(bitmap, vec2(openfl_TextureCoordv.x + xOffset + 0.003, openfl_TextureCoordv.y)).b;
-      float alpha = texture(bitmap, vec2(openfl_TextureCoordv.x + xOffset, openfl_TextureCoordv.y)).a;
+      float red =  flixel_texture2D(bitmap, vec2(openfl_TextureCoordv.x + xOffset - 0.003, openfl_TextureCoordv.y)).r;
+    float green = flixel_texture2D(bitmap, vec2(openfl_TextureCoordv.x + xOffset, openfl_TextureCoordv.y)).g;
+    float blue = flixel_texture2D(bitmap, vec2(openfl_TextureCoordv.x + xOffset + 0.003, openfl_TextureCoordv.y)).b;
+      float alpha = flixel_texture2D(bitmap, vec2(openfl_TextureCoordv.x + xOffset, openfl_TextureCoordv.y)).a;
 
       vec3 color = vec3(red, green, blue);
       float scanline = sin(openfl_TextureCoordv.y*800.0)*0.04;
