@@ -94,7 +94,7 @@ class Main extends Sprite {
 			Main.skipNextDump = false;
 		});
 
-		addChild(fpsVar);
+		FlxG.game.addChild(fpsVar);
 		
 		#if html5
 		FlxG.autoPause = false;
