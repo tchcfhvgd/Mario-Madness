@@ -5607,9 +5607,9 @@ class PlayState extends MusicBeatState
 		timeBarBG.cameras = [camHUD];
 		timeTxt.cameras = [camHUD];
 
-                #if android
+        #if android
 		addAndroidControls();
-		androidc.visible = true;
+		androidc.visible = false;
 		#end
 
 		if (noHUD)
@@ -6163,7 +6163,10 @@ class PlayState extends MusicBeatState
 
 			inCutscene = true;
 			cutVid = new VideoSprite();
+			cutVid.scrollFactor.set(0, 0);
 			cutVid.playVideo(Paths.video(name));
+			cutVid.cameras = [camOther];
+			add(cutVid);
 			cancelFadeTween();
 			CustomFadeTransition.nextCamera = null;
 
@@ -6242,6 +6245,9 @@ class PlayState extends MusicBeatState
 		var ret:Dynamic = callOnLuas('onStartCountdown', []);
 		if (ret != FunkinLua.Function_Stop)
 		{
+	    #if android
+		androidc.visible = true;
+		#end
 			generateStaticArrows(0);
 			generateStaticArrows(1);
 			for (i in 0...playerStrums.length) {
@@ -14400,6 +14406,9 @@ class PlayState extends MusicBeatState
 		deathCounter = 0;
 		seenCutscene = false;
 		virtualmode = false;
+		#if android
+		androidc.visible = false;
+		#end
 
 		#if ACHIEVEMENTS_ALLOWED
 		if (achievementObj != null)
