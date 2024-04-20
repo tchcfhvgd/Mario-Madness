@@ -158,7 +158,6 @@ class TitleState extends MusicBeatState {
 		bloom = new BloomShader();
 		bloom.Size.value = [3.0];
 
-		camHUD.setFilters([new ShaderFilter(ntsc = new NTSCSFilter())/*, new ShaderFilter(bloom)*/]);
 		@:privateAccess var shadersButCooler:Array<BitmapFilter> = [for (shader in camHUD._filters) shader]; // W NAMING!!!!
 		shadersButCooler.push(new ShaderFilter(staticShader = new TVStatic()));
 		FlxG.camera.setFilters(shadersButCooler);
