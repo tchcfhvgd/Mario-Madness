@@ -16,6 +16,8 @@ import flixel.util.FlxColor;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 
+import lime.utils.Assets;
+
 class GameOverSubstate extends MusicBeatSubstate
 {
 	var bf:Boyfriend;
@@ -49,7 +51,7 @@ class GameOverSubstate extends MusicBeatSubstate
 	var lePlayState:PlayState;
 
 	var timers:Array<FlxTimer> = [];
-	var voiceline:FlxSound;
+	var voiceline:FlxSound = null;
 
 	public static var characterName:String = 'bf';
 	public static var deathSoundName:String = 'fnf_loss_sfx';
@@ -82,8 +84,11 @@ class GameOverSubstate extends MusicBeatSubstate
 
 		Conductor.songPosition = 0;
 		Conductor.changeBPM(50);
-
-		voiceline = new FlxSound().loadEmbedded(Paths.sound(PlayState.curStage + '/line' + FlxG.random.int(1, vaCount)));
+		
+		var choose:Int = FlxG.random.int(1, vaCount);		
+		var path = Paths.getPreloadPath('sounds/' + PlayState.curStage + '/line' + choose + '.ogg');
+		if (Assets.exists(path))
+		voiceline = new FlxSound().loadEmbedded(Paths.sound(PlayState.curStage + '/line' + choose));
 
 		bf = new Boyfriend(x, y, characterName);
 		add(bf);
@@ -539,6 +544,11 @@ class GameOverSubstate extends MusicBeatSubstate
 		camFollowPos.setPosition(FlxG.camera.scroll.x + (FlxG.camera.width / 2), FlxG.camera.scroll.y + (FlxG.camera.height / 2));
 		add(camFollowPos);
 		//trace('quiere ser ' + camFollow + ' pero debe ser ' + camFollowPos);
+	
+	        #if android
+		addVirtualPad(NONE, A_B);
+		addPadCamera();
+		#end
 	}
 
 	override function update(elapsed:Float)
@@ -573,7 +583,7 @@ class GameOverSubstate extends MusicBeatSubstate
 		if(lePlayState.oldFX != null && ClientPrefs.filtro85){
 		lePlayState.oldFX.update(elapsed);
 		}
-
+		
 		if(lePlayState.staticShader != null){
 			lePlayState.staticShader.update(elapsed);
 		}
@@ -622,13 +632,18 @@ class GameOverSubstate extends MusicBeatSubstate
 			PlayState.deathCounter = 0;
 			PlayState.seenCutscene = false;
 
+			if (PlayState.curStage == 'turmoilsweep' || PlayState.curStage == 'castlestar' || PlayState.curStage == 'exeport' || PlayState.curStage == 'piracy')
+			{
+			PlayState.qqqeb = false;
+			}
+			
 			if (PlayState.isStoryMode)
 			{
 				MusicBeatState.switchState(new StoryMenuState());
 			}
 			else if (PlayState.isWarp)
 			{
-				MusicBeatState.switchState(new WarpState());
+				MusicBeatState.switchState(new WorldState());
 			}
 			else
 			{
@@ -849,6 +864,8 @@ class GameOverSubstate extends MusicBeatSubstate
 
 	function playVoiceline(time:Float = 2.5):Void
 	{
+	    if (voiceline == null) return;
+	    
 		if (hasVA)
 			{
 				trace('hasVA is ' + hasVA + ', playing voiceline');
@@ -985,7 +1002,7 @@ class GameOverSubstate extends MusicBeatSubstate
 				else
 					FlxTween.tween(FlxG.sound.music, {volume: 0}, 2.5);
 				if(hasVA)
-					voiceline.stop();
+					if (voiceline != null) voiceline.stop();
 				FlxG.sound.play(Paths.music(endSoundName));
 				if(PlayState.curStage == 'landstage')
 					FlxG.sound.play(Paths.music('GBchuckle'));

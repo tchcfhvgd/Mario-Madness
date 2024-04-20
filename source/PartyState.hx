@@ -112,11 +112,11 @@ class PartyState extends MusicBeatState
 	{
 		FlxG.sound.music.stop();
 		FlxG.sound.soundTrayEnabled = false;
-
+		
 		bgColor = 0xFF000000;
 
-		topCam = new FlxCamera(0, -600, 256, 192, 2);
-		botCam = new FlxCamera(0, -216, 256, 192, 2);
+		topCam = new FlxCamera(0, -20, 256, 192, 2);
+		botCam = new FlxCamera(0, 350, 256, 192, 2);
 		
 		FlxG.cameras.add(topCam);
 		FlxG.cameras.add(botCam);
@@ -126,19 +126,7 @@ class PartyState extends MusicBeatState
 			botCam.y = topCam.y;
 			topCam.y = swapX;
 		}
-
 		
-		Lib.current.scaleX = 2.5;
-		Lib.current.scaleY = 2.5;
-		PlayState.ogwinX = Lib.application.window.x;
-		PlayState.ogwinY = Lib.application.window.y;
-		var win = Lib.application.window;
-		win.move(win.x + Std.int((win.width - 512) / 2), win.y + Std.int((win.height - 768) / 2));
-		FlxG.resizeWindow(512, 768);
-		FlxG.resizeGame(512, 768);
-		Lib.current.x = 0;
-		Lib.current.y = 0;
-		win.resizable = false;
 		Main.fpsVar.visible = false;
 		FlxG.sound.volume = 1;
 

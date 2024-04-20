@@ -346,6 +346,11 @@ class PauseSubState extends MusicBeatSubstate
 
 		changeSelection();
 
+		#if android
+		addVirtualPad(FULL, A);
+		addPadCamera();
+		#end
+		
 		cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 1]];
 	}
 
@@ -534,17 +539,6 @@ class PauseSubState extends MusicBeatSubstate
 						MusicBeatState.resetState();
 						FlxG.sound.music.volume = 0;
 
-						if (PlayState.curStage == 'virtual')
-						{
-							Lib.application.window.fullscreen = false;
-							Lib.application.window.maximized = false;
-							Lib.application.window.resize(restsizeX, restsizeY);
-							Lib.application.window.move(restX, restY);
-							#if desktop
-							CppAPI.setWallpaper('old');
-							#end
-						}
-
 						if (PlayState.getspeed != 0)
 						{
 							PlayState.SONG.speed = PlayState.getspeed;
@@ -568,10 +562,14 @@ class PauseSubState extends MusicBeatSubstate
 							PlayState.seenCutscene = false;
 							CustomFadeTransition.nextCamera = transCamera;
 							ClientPrefs.saveSettings();
+							if (PlayState.curStage == 'turmoilsweep' || PlayState.curStage == 'castlestar' || PlayState.curStage == 'exeport' || PlayState.curStage == 'piracy')
+			                                {
+			                                PlayState.qqqeb = false;
+			                                }              
 							PlayState.virtualmode = false;
 							if (PlayState.isWarp)
 							{
-								MusicBeatState.switchState(new WarpState());
+								MusicBeatState.switchState(new WorldState());
 							}
 							else
 							{

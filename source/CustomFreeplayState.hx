@@ -187,7 +187,7 @@ class CustomFreeplayState extends MusicBeatSubstate
 		// 	changeSelection(1);
 		// }
 
-		if (controls.BACK)
+		if (controls.BACK #if android || FlxG.android.justReleased.BACK #end)
 		{
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 			FlxG.state.closeSubState();
@@ -509,7 +509,7 @@ class FreeplaySubState extends MusicBeatSubstate
 			}
 		}
 
-		if (controls.BACK && !quieto)
+		if (controls.BACK #if android || FlxG.android.justReleased.BACK #end && !quieto)
 		{
 			curSelected = 0;
 			CustomFreeplayState.onMenu = false;
