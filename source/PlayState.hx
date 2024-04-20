@@ -169,6 +169,8 @@ class PlayState extends MusicBeatState
 	public var gf:Character;
 	public var boyfriend:Boyfriend;
 
+	public static var qqqeb1:Bool = false;
+	public static var qqqeb:Bool = false;
 	public static var maxLuaFPS = 60;
 	var fpsElapsed:Array<Float> = [0,0,0];
 	var numCalls:Array<Float> = [0,0,0];
