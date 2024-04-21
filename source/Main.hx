@@ -29,9 +29,6 @@ class Main extends Sprite {
 
 	public static var fpsVar:FPS;
 
-	public static var skipNextDump:Bool = false;
-	public static var forceNoVramSprites:Bool = true;
-
 	public static function main():Void {
 		Lib.current.addChild(new Main());
 	}
@@ -83,22 +80,38 @@ class Main extends Sprite {
 		
 		addChild(new FlxGame(gameWidth, gameHeight, initialState, framerate, framerate, skipSplash, startFullscreen));
 
-		FlxG.signals.preStateSwitch.add(function () {
-			if (!Main.skipNextDump) {
-				Paths.clearStoredMemory(true);
-				FlxG.bitmap.dumpCache();
-			}
-		});
-		FlxG.signals.postStateSwitch.add(function () {
-			Paths.clearUnusedMemory();
-			Main.skipNextDump = false;
-		});
-
 		FlxG.game.addChild(fpsVar);
 		
 		#if html5
 		FlxG.autoPause = false;
 		#end
+		FlxG.signals.gameResized.add(onResizeGame);
+	}
+
+	function onResizeGame(w:Int, h:Int) {
+		fixShaderSize(this);
+		if (FlxG.game != null) fixShaderSize(FlxG.game);
+
+		if (FlxG.cameras == null) return;
+		for (cam in FlxG.cameras.list) {
+			@:privateAccess
+			if (cam != null && (cam._filters != null || cam._filters != []))
+				fixShaderSize(cam.flashSprite);
+		}	
+	}
+
+	function fixShaderSize(sprite:Sprite) // Shout out to Ne_Eo for bringing this to my attention
+	{
+		@:privateAccess {
+			if (sprite != null)
+			{
+				sprite.__cacheBitmap = null;
+				sprite.__cacheBitmapData = null;
+				sprite.__cacheBitmapData2 = null;
+				sprite.__cacheBitmapData3 = null;
+				sprite.__cacheBitmapColorTransform = null;
+			}
+		}
 	}
 }
 
