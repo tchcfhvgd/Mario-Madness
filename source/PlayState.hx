@@ -813,6 +813,8 @@ class PlayState extends MusicBeatState
 
 	override public function create()
 	{
+		Paths.clearStoredMemory();
+		
 		instance = this;
 
 		if (FlxG.sound.music != null)
@@ -5887,7 +5889,9 @@ class PlayState extends MusicBeatState
 
 		callOnLuas('onCreatePost', []);
 
-		super.create();
+		Paths.clearUnusedMemory();
+
+                super.create();
 	}
 
 	public function lofiTweensToBeCreepyTo(sprite:FlxSprite):Void
