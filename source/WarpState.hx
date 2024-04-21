@@ -376,12 +376,12 @@ class WarpState extends MusicBeatState
 						goodbye();
 					}
 
-				if (FlxG.keys.justPressed.LEFT)
+				if (controls.UI_LEFT_P)
 				{
 					quieto = false;
 					caminar(canciones[curSelected][3]);
 				}
-				else if (FlxG.keys.justPressed.RIGHT)
+				else if (controls.UI_RIGHT_P)
 				{
 					quieto = false;
 					caminar(canciones[curSelected][4]);
@@ -1218,19 +1218,19 @@ class WorldState extends MusicBeatSubstate
 
 
 			if(quieto && pipeTimer == 0){
-				if (FlxG.keys.justPressed.UP)
+				if (controls.UI_UP_P)
 				{
 					caminar(canciones[curSelected][1], 1);
 				}
-				else if (FlxG.keys.justPressed.DOWN)
+				else if (controls.UI_DOWN_P)
 				{
 					caminar(canciones[curSelected][2], 2);
 				}
-				else if (FlxG.keys.justPressed.LEFT)
+				else if (controls.UI_LEFT_P)
 				{
 					caminar(canciones[curSelected][3], 3);
 				}
-				else if (FlxG.keys.justPressed.RIGHT)
+				else if (controls.UI_RIGHT_P)
 				{
 					caminar(canciones[curSelected][4], 4);
 				}
@@ -2045,7 +2045,7 @@ class UltraState extends MusicBeatSubstate
 							gotoSong();
 						}
 
-					if (FlxG.keys.justPressed.UP && cutScenes == 0)
+					if (controls.UI_UP_P && cutScenes == 0)
 						{
 							quieto = false;
 							caminar();
