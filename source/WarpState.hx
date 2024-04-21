@@ -339,6 +339,10 @@ class WarpState extends MusicBeatState
 		//	} catch (e) {
 		//	trace(e.message);
 		//	}
+	        #if android
+		addVirtualPad(FULL, A_B);
+		addPadCamera();
+		#end
 	}
 
 	var datos:String = '';
@@ -1139,6 +1143,11 @@ class WorldState extends MusicBeatSubstate
 			camWorld.deadzone.height -= 100;
 			camWorld.deadzone.width = 0;
 		}
+	
+	        #if android
+		addVirtualPad(FULL, A_B);
+		addPadCamera();
+		#end
 	}
 
 	var quieto:Bool = false;
@@ -1176,7 +1185,7 @@ class WorldState extends MusicBeatSubstate
 					}
 
 					if(pibeback.animation.curAnim.name != 'enter' && quieto){
-					if (FlxG.keys.pressed.ESCAPE && curSelected != 0){
+					if (controls.BACK && curSelected != 0){
 							if(pipeTimer == 0){
 								
 								pibeback.animation.play('intro');
@@ -2006,6 +2015,10 @@ class UltraState extends MusicBeatSubstate
 		//quieto = true;
 
 		//camWorld.zoom = 0.3333;
+	        #if android
+		addVirtualPad(FULL, A_B);
+		addPadCamera();
+		#end
 	}
 	var mov:Float = 1;
 	var datos:String = '';
@@ -2393,7 +2406,7 @@ class VirtualState extends MusicBeatSubstate
 	}
 
 	override function update(elapsed:Float) {
-		if (controls.ACCEPT && !selected){
+		if (FlxG.mouse.justReleased && !selected){
 			selected = true;
 
 			for (i in 0...6)
