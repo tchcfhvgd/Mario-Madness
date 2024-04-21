@@ -52,9 +52,6 @@ class MMOptions extends MusicBeatSubstate
 		#if desktop
 		DiscordClient.changePresence("Options Menu", null);
 		#end
-
-		Paths.clearStoredMemory();
-		Paths.clearUnusedMemory();
 			
 		FlxG.sound.playMusic(Paths.music('options'), 1);
         FlxG.camera.bgColor = 0x00FFFFFF;
