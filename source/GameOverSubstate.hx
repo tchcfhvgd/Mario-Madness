@@ -639,7 +639,7 @@ class GameOverSubstate extends MusicBeatSubstate
 			
 			if (PlayState.isStoryMode)
 			{
-				MusicBeatState.switchState(new StoryMenuState());
+				MusicBeatState.switchState(new MainMenuState());
 			}
 			else if (PlayState.isWarp)
 			{
