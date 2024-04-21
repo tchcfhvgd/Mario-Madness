@@ -140,6 +140,9 @@ class MainMenuState extends MusicBeatState {
 		Lib.application.window.title = "Friday Night Funkin': Mario's Madness";
 		#end
 
+		Paths.clearStoredMemory();
+		Paths.clearUnusedMemory();
+			
 		if (Main.fpsVar != null) {
 			Main.fpsVar.visible = ClientPrefs.showFPS;
 		}
