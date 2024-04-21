@@ -16,12 +16,14 @@ class OldTVShader extends FlxShader {
 		
 		//prng func, from https://stackoverflow.com/a/52207531
 		
-		vec3 hash(uvec3 x) {
-			x = ((x>>8U)^x.yzx)*k;
-			x = ((x>>8U)^x.yzx)*k;
-			x = ((x>>8U)^x.yzx)*k;
-			return vec3(x)*(1.0/float(0xffffffffU));
-		}
+		vec3 hash(vec3 x) {
+                vec3 k = vec3(10.0, 10.0, 20.0);
+                for(int i = 0; i < 3; i++){
+                x = mod((x / 2.0), 256.0);
+                x = x.yzx * k;
+                }        
+                return x / float(0xffffffff);
+                }
 		
 		void main() {
 			bool flag = false;
