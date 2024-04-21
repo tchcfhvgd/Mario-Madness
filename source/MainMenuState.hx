@@ -604,7 +604,7 @@ class MainMenuState extends MusicBeatState {
 		}
 
 		Mouse.cursor = WEHOVERING ? BUTTON : ARROW;
-		if (controls.ACCEPT && smOpen) {
+		if (FlxG.mouse.justReleased && smOpen) {
 			smOpen = false;
 			FlxG.sound.play(Paths.sound('accept'));
 			if(showMsg == 1){
