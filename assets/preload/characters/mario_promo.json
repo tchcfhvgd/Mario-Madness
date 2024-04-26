@@ -125,8 +125,8 @@
 	"no_antialiasing": false,
 	"image": "characters/Mario_PromoShow",
 	"position": [
-		-180,
-		242
+		-60,
+		362
 	],
 	"healthicon": "promo",
 	"flip_x": false,
@@ -136,9 +136,9 @@
 		0
 	],
 	"camera_position": [
-		-450,
-		80
+		-420,
+		0
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2
 }

@@ -1,70 +1,70 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				-1,
 				0
 			],
+			"loop": false,
+			"fps": 12,
 			"anim": "idle",
-			"fps": 12,
-			"name": "Pikafriend idle",
-			"indices": []
+			"indices": [],
+			"name": "Pikafriend idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
+			"loop": false,
+			"fps": 12,
 			"anim": "singLEFT",
-			"fps": 12,
-			"name": "Pikafriend left",
-			"indices": []
+			"indices": [],
+			"name": "Pikafriend left"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
+			"loop": false,
+			"fps": 12,
 			"anim": "singRIGHT",
-			"fps": 12,
-			"name": "Pikafriend right",
-			"indices": []
+			"indices": [],
+			"name": "Pikafriend right"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
+			"loop": false,
+			"fps": 12,
 			"anim": "singDOWN",
-			"fps": 12,
-			"name": "Pikafriend down",
-			"indices": []
+			"indices": [],
+			"name": "Pikafriend down"
 		},
 		{
+			"offsets": [
+				0,
+				0
+			],
 			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
-			"anim": "singUP",
 			"fps": 12,
-			"name": "Pikafriend up",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "Pikafriend up"
 		},
 		{
-			"loop": true,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "hit",
-			"fps": 3,
-			"name": "Pikafriend hurt",
-			"indices": []
+			"loop": true,
+			"fps": 12,
+			"anim": "death",
+			"indices": [],
+			"name": "Pikafriend die"
 		},
 		{
 			"offsets": [
@@ -72,10 +72,10 @@
 				0
 			],
 			"indices": [],
-			"fps": 12,
-			"anim": "death",
+			"fps": 3,
+			"anim": "hit",
 			"loop": true,
-			"name": "Pikafriend death"
+			"name": "Pikafriend hurt"
 		}
 	],
 	"no_antialiasing": true,

@@ -1,44 +1,44 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
-				426,
-				-59
+				295,
+				-64
 			],
+			"loop": false,
 			"fps": 24,
 			"anim": "singLEFT",
 			"indices": [],
 			"name": "MX Sing Left"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				207,
+				87,
 				-70
 			],
+			"loop": false,
 			"fps": 24,
 			"anim": "singDOWN",
 			"indices": [],
 			"name": "MX Sing Down"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				-158,
+				-208,
 				263
 			],
+			"loop": false,
 			"fps": 24,
 			"anim": "singUP",
 			"indices": [],
 			"name": "MX Sing Up"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				-300,
+				-430,
 				57
 			],
+			"loop": false,
 			"fps": 24,
 			"anim": "singRIGHT",
 			"indices": [],
@@ -81,8 +81,8 @@
 	"no_antialiasing": false,
 	"image": "characters/MX_Demise_Assets",
 	"position": [
-		-930,
-		-870
+		-760,
+		-1300
 	],
 	"healthicon": "MXdemise",
 	"flip_x": false,
@@ -96,5 +96,5 @@
 		100
 	],
 	"sing_duration": 6.1,
-	"scale": 1
+	"scale": 2.3
 }

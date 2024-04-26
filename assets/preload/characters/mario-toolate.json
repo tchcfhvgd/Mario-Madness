@@ -1,77 +1,77 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				-3,
 				0
 			],
-			"anim": "idle",
+			"loop": true,
 			"fps": 24,
-			"name": "mario idle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "mario idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				143,
 				-41
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "mario left",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "mario left"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				75,
 				147
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "mario up",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "mario up"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				152,
 				-41
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "mario right",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "mario right"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				65,
 				-180
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "mario down",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "mario down"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				81,
 				196
 			],
-			"anim": "fade",
+			"loop": false,
 			"fps": 24,
-			"name": "mario fade away",
-			"indices": []
+			"anim": "fade",
+			"indices": [],
+			"name": "mario fade away"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Too_Late_Mario",
 	"position": [
-		-50,
-		-40
+		100,
+		60
 	],
 	"healthicon": "latemario",
 	"flip_x": false,
@@ -81,9 +81,9 @@
 		38
 	],
 	"camera_position": [
-		-60,
-		-70
+		-210,
+		-180
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2
 }

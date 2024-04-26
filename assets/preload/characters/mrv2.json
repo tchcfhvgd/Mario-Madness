@@ -1,77 +1,77 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				450
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "VIdle"
+			"fps": 24,
+			"name": "Mr_Virtual_V2_Assets VIdle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				200,
 				410
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "VRight"
+			"fps": 24,
+			"name": "Mr_Virtual_V2_Assets VRight",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				347,
 				524
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "VLeft"
+			"fps": 24,
+			"name": "Mr_Virtual_V2_Assets VLeft",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				400,
 				110
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "VDown"
+			"fps": 24,
+			"name": "Mr_Virtual_V2_Assets VDown",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				90,
-				1190
+				1110
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "VUp"
+			"fps": 24,
+			"name": "Mr_Virtual_V2_Assets VUp",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-5,
 				450
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "transform",
-			"loop": false,
-			"name": "VTransformation"
+			"fps": 24,
+			"name": "Mr_Virtual_V2_Assets VTransformation",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Mr_Virtual_V2_Assets",
 	"position": [
-		-160,
-		90
+		70,
+		370
 	],
 	"healthicon": "v",
 	"flip_x": false,
@@ -81,9 +81,9 @@
 		0
 	],
 	"camera_position": [
-		-130,
-		-500
+		-40,
+		-590
 	],
 	"sing_duration": 6.1,
-	"scale": 1
+	"scale": 2.6
 }

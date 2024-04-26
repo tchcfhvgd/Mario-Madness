@@ -9,18 +9,18 @@
 			"fps": 24,
 			"anim": "idle",
 			"indices": [],
-			"name": "yoshiexe idle"
+			"name": "Yoshi_EXE_Assets aa"
 		},
 		{
 			"offsets": [
-				244,
+				223,
 				-41
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singLEFT",
 			"indices": [],
-			"name": "yoshiexe left"
+			"name": "Yoshi_EXE_Assets left"
 		},
 		{
 			"offsets": [
@@ -31,7 +31,7 @@
 			"fps": 24,
 			"anim": "singRIGHT",
 			"indices": [],
-			"name": "yoshiexe right"
+			"name": "Yoshi_EXE_Assets right"
 		},
 		{
 			"offsets": [
@@ -42,46 +42,49 @@
 			"fps": 24,
 			"anim": "singDOWN",
 			"indices": [],
-			"name": "yoshiexe down"
+			"name": "Yoshi_EXE_Assets down"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				40,
 				166
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "yoshiexe up",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "Yoshi_EXE_Assets up"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				756,
+				644,
 				145
 			],
-			"anim": "death",
+			"loop": false,
 			"fps": 24,
-			"name": "yoshiexe death",
-			"indices": []
+			"anim": "death",
+			"indices": [],
+			"name": "Yoshi_EXE_Assets death"
 		},
 		{
-			"loop": true,
 			"offsets": [
 				70,
 				-50
 			],
-			"anim": "duro",
+			"loop": true,
 			"fps": 24,
-			"name": "yoshiexe stare",
-			"indices": []
+			"anim": "duro",
+			"indices": [],
+			"name": "Yoshi_EXE_Assets stare"
 		},
 		{
 			"offsets": [
 				160,
 				270
 			],
+			"loop": false,
+			"fps": 24,
+			"anim": "pow",
 			"indices": [
 				2,
 				3,
@@ -102,16 +105,16 @@
 				18,
 				19
 			],
-			"fps": 24,
-			"anim": "pow",
-			"loop": false,
-			"name": "yoshiexe ground pound"
+			"name": "Yoshi_EXE_Assets ground pound"
 		},
 		{
 			"offsets": [
 				160,
 				270
 			],
+			"loop": true,
+			"fps": 24,
+			"anim": "prepow",
 			"indices": [
 				1,
 				1,
@@ -131,17 +134,14 @@
 				1,
 				1
 			],
-			"fps": 24,
-			"anim": "prepow",
-			"loop": true,
-			"name": "yoshiexe ground pound"
+			"name": "Yoshi_EXE_Assets ground pound"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Yoshi_EXE_Assets",
 	"position": [
-		76,
-		217
+		426,
+		747
 	],
 	"healthicon": "yoshiex",
 	"flip_x": false,
@@ -155,6 +155,5 @@
 		0
 	],
 	"sing_duration": 4,
-	"idleReturn": true,
-	"scale": 1
+	"scale": 2.6
 }

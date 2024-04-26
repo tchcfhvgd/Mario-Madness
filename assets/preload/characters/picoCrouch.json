@@ -1,143 +1,143 @@
 {
 	"animations": [
 		{
+			"loop": false,
+			"offsets": [
+				-63,
+				-42
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "PicoCrouchIdle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				211,
+				174
+			],
+			"anim": "singUP-alt",
+			"fps": 24,
+			"name": "PicoShoot0",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-83,
+				-40
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "PicoCrouchLeft"
+		},
+		{
+			"offsets": [
+				-70,
+				-47
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "PicoCrouchDown"
+		},
+		{
+			"offsets": [
+				-73,
+				-27
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "PicoCrouchUp"
+		},
+		{
+			"offsets": [
+				-83,
+				-37
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "PicoCrouchRight"
+		},
+		{
 			"offsets": [
 				-63,
 				-42
 			],
 			"loop": false,
 			"fps": 24,
-			"anim": "idle",
+			"anim": "singLEFTmiss",
 			"indices": [],
 			"name": "PicoCrouchIdle"
 		},
 		{
 			"offsets": [
-				211,
-				174
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singUP-alt",
-			"indices": [],
-			"name": "PicoShoot0"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-83,
-				-40
-			],
-			"anim": "singLEFT",
-			"fps": 24,
-			"name": "PicoCrouchLeft",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-70,
-				-47
-			],
-			"anim": "singDOWN",
-			"fps": 24,
-			"name": "PicoCrouchDown",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-73,
-				-27
-			],
-			"anim": "singUP",
-			"fps": 24,
-			"name": "PicoCrouchUp",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-83,
-				-37
-			],
-			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "PicoCrouchRight",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
 				-63,
 				-42
 			],
-			"anim": "singLEFTmiss",
-			"fps": 24,
-			"name": "PicoCrouchIdle",
-			"indices": []
-		},
-		{
 			"loop": false,
-			"offsets": [
-				-63,
-				-42
-			],
+			"fps": 24,
 			"anim": "singDOWNmiss",
-			"fps": 24,
-			"name": "PicoCrouchIdle",
-			"indices": []
+			"indices": [],
+			"name": "PicoCrouchIdle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-63,
 				-42
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singUPmiss",
-			"fps": 24,
-			"name": "PicoCrouchIdle",
-			"indices": []
+			"indices": [],
+			"name": "PicoCrouchIdle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-63,
 				-42
 			],
-			"anim": "singRIGHTmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "PicoCrouchIdle",
-			"indices": []
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "PicoCrouchIdle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				16,
 				47
 			],
-			"anim": "dialog1",
+			"loop": false,
 			"fps": 24,
-			"name": "PicoDialogue",
-			"indices": []
+			"anim": "dialog1",
+			"indices": [],
+			"name": "PicoDialogue"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-70,
 				-40
 			],
-			"anim": "dialog2",
+			"loop": false,
 			"fps": 24,
-			"name": "PicoDIalogue",
-			"indices": []
+			"anim": "dialog2",
+			"indices": [],
+			"name": "PicoDIalogue"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Too_Late_Pico_ass_sets_v2",
 	"position": [
-		0,
-		350
+		150,
+		470
 	],
 	"healthicon": "pico",
 	"flip_x": true,
@@ -147,9 +147,9 @@
 		85
 	],
 	"camera_position": [
-		0,
-		0
+		140,
+		-120
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2
 }

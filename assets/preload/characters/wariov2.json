@@ -76,13 +76,24 @@
 			"fps": 24,
 			"name": "Green Eye Loop",
 			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				41,
+				307
+			],
+			"anim": "eyestart-loop",
+			"fps": 24,
+			"name": "Green Eye Loop",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/NEW_Wario_Apparition_Assets",
 	"position": [
-		160,
-		350
+		290,
+		500
 	],
 	"healthicon": "wario2",
 	"flip_x": false,
@@ -92,9 +103,9 @@
 		78
 	],
 	"camera_position": [
-		0,
-		0
+		-360,
+		-350
 	],
 	"sing_duration": 4,
-	"scale": 1.2
+	"scale": 2.4
 }

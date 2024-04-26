@@ -1,110 +1,110 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				305,
 				-104
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "BFIdle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "BFIdle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				305,
 				-137
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "RaceDown",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "RaceDown"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				306,
 				-60
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "RaceUp",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "RaceUp"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				306,
 				-109
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "RaceLeft",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "RaceLeft"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				317,
 				-111
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "RaceRight",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "RaceRight"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				305,
 				-109
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFTmiss",
-			"indices": [],
-			"name": "BFLeftMiss"
+			"fps": 24,
+			"name": "BFLeftMiss",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
 				303,
 				-59
 			],
-			"anim": "singUPmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "BFUpMiss",
-			"indices": []
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "BFUpMiss"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				314,
 				-111
 			],
-			"anim": "singRIGHTmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "BFRightMiss",
-			"indices": []
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "BFRightMiss"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				305,
 				-137
 			],
-			"anim": "singDOWNmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "BFDownMiss",
-			"indices": []
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "BFDownMiss"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Race_Mario_Boyfriend_Assets_v1",
 	"position": [
-		-80,
-		110
+		180,
+		270
 	],
 	"healthicon": "bfr2",
 	"flip_x": true,
@@ -114,9 +114,9 @@
 		209
 	],
 	"camera_position": [
-		-70,
-		-60
+		200,
+		-220
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2
 }

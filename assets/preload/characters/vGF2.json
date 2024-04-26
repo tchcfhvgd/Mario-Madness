@@ -8,7 +8,7 @@
 			],
 			"anim": "singDOWN",
 			"fps": 24,
-			"name": "VAltDown",
+			"name": "Mr_Virtual_V2_Assets VAltDown",
 			"indices": []
 		},
 		{
@@ -19,7 +19,7 @@
 			],
 			"anim": "idle",
 			"fps": 24,
-			"name": "VAltIdle",
+			"name": "Mr_Virtual_V2_Assets VAltIdle",
 			"indices": []
 		},
 		{
@@ -30,7 +30,7 @@
 			],
 			"anim": "singRIGHT",
 			"fps": 24,
-			"name": "VAltRight",
+			"name": "Mr_Virtual_V2_Assets VAltRight",
 			"indices": []
 		},
 		{
@@ -41,7 +41,7 @@
 			],
 			"anim": "singLEFT",
 			"fps": 24,
-			"name": "VAltLeft",
+			"name": "Mr_Virtual_V2_Assets VAltLeft",
 			"indices": []
 		},
 		{
@@ -52,15 +52,15 @@
 			],
 			"anim": "singUP",
 			"fps": 24,
-			"name": "VAltUp",
+			"name": "Mr_Virtual_V2_Assets VAltUp",
 			"indices": []
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Mr_Virtual_V2_Assets",
 	"position": [
-		-45,
-		380
+		185,
+		630
 	],
 	"healthicon": "gfv",
 	"flip_x": false,
@@ -70,9 +70,9 @@
 		0
 	],
 	"camera_position": [
-		-130,
-		-500
+		-290,
+		-650
 	],
 	"sing_duration": 6.1,
-	"scale": 1
+	"scale": 2.6
 }

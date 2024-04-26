@@ -1,165 +1,165 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				165,
 				16
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFT",
-			"fps": 24,
-			"name": "TopLeftFront",
-			"indices": []
+			"indices": [],
+			"name": "TopLeftFront"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-80,
 				35
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "TopDown",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "TopDown"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-90,
 				25
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "TopUpFront",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "TopUpFront"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-141,
 				-14
 			],
-			"anim": "singRIGHTmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "TopRightFront",
-			"indices": []
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "TopRightFront"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				165,
 				16
 			],
-			"anim": "singLEFTmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "TopLeftFront",
-			"indices": []
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "TopLeftFront"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-80,
 				35
 			],
-			"anim": "singDOWNmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "TopDown",
-			"indices": []
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "TopDown"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-90,
 				25
 			],
-			"anim": "singUPmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "TopUpFront",
-			"indices": []
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "TopUpFront"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-141,
 				-14
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "TopRightFront",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "TopRightFront"
 		},
 		{
+			"loop": true,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": true,
-			"fps": 0,
 			"anim": "idle",
-			"indices": [],
-			"name": "TopIdle"
+			"fps": 24,
+			"name": "TopIdle",
+			"indices": []
 		},
 		{
+			"loop": true,
 			"offsets": [
 				30,
 				-275
 			],
-			"loop": true,
-			"fps": 32,
 			"anim": "idle-legs",
-			"indices": [],
-			"name": "Legs"
+			"fps": 24,
+			"name": "Legs",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-222,
 				-207
 			],
-			"anim": "singLEFTarm",
+			"loop": false,
 			"fps": 24,
-			"name": "TopLeftBack",
-			"indices": []
+			"anim": "singLEFTarm",
+			"indices": [],
+			"name": "TopLeftBack"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-273,
 				-180
 			],
-			"anim": "singUParm",
+			"loop": false,
 			"fps": 24,
-			"name": "TopUpBack",
-			"indices": []
+			"anim": "singUParm",
+			"indices": [],
+			"name": "TopUpBack"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-50,
 				-200
 			],
-			"anim": "singRIGHTarm",
+			"loop": false,
 			"fps": 24,
-			"name": "TopRightBack",
-			"indices": []
+			"anim": "singRIGHTarm",
+			"indices": [],
+			"name": "TopRightBack"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "dialog1",
-			"loop": false,
-			"name": "TopDialgoue"
+			"fps": 24,
+			"name": "TopDialgoue",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Too_Late_Pico_FINALSEQUENCE_assets",
 	"position": [
-		-30,
-		230
+		200,
+		360
 	],
 	"healthicon": "pico",
 	"flip_x": true,
@@ -169,9 +169,9 @@
 		85
 	],
 	"camera_position": [
-		-140,
-		150
+		-10,
+		80
 	],
 	"sing_duration": 6.1,
-	"scale": 1
+	"scale": 2
 }

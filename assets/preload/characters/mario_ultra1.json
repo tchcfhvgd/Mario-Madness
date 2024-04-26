@@ -8,7 +8,7 @@
 			],
 			"anim": "idle",
 			"fps": 24,
-			"name": "Ultra M idle",
+			"name": "Ultra_M1_Assets Ultra M idle instance",
 			"indices": []
 		},
 		{
@@ -19,7 +19,7 @@
 			],
 			"anim": "singLEFT",
 			"fps": 24,
-			"name": "Ultra M left",
+			"name": "Ultra_M1_Assets Ultra M left instance",
 			"indices": []
 		},
 		{
@@ -30,7 +30,7 @@
 			],
 			"anim": "singRIGHT",
 			"fps": 24,
-			"name": "Ultra M right",
+			"name": "Ultra_M1_Assets Ultra M right instance",
 			"indices": []
 		},
 		{
@@ -41,7 +41,7 @@
 			],
 			"anim": "singDOWN",
 			"fps": 24,
-			"name": "Ultra M down",
+			"name": "Ultra_M1_Assets Ultra M down instance",
 			"indices": []
 		},
 		{
@@ -52,15 +52,15 @@
 			],
 			"anim": "singUP",
 			"fps": 24,
-			"name": "Ultra M up",
+			"name": "Ultra_M1_Assets Ultra M up instance",
 			"indices": []
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Ultra_M1_Assets",
 	"position": [
-		-400,
-		-900
+		150,
+		-650
 	],
 	"healthicon": "ultram",
 	"flip_x": false,
@@ -70,10 +70,9 @@
 		55
 	],
 	"camera_position": [
-		-70,
-		-100
+		-600,
+		-500
 	],
 	"sing_duration": 15,
-	"idleReturn": true,
-	"scale": 1.11
+	"scale": 2.91
 }

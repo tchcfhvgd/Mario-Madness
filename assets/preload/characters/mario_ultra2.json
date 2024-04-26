@@ -2,58 +2,58 @@
 	"animations": [
 		{
 			"offsets": [
-				0,
-				0
+				-490,
+				-340
 			],
-			"indices": [],
+			"loop": false,
 			"fps": 24,
 			"anim": "idle",
-			"loop": false,
-			"name": "ultra idle"
+			"indices": [],
+			"name": "Ultra_M2_Assets ultra idle"
 		},
 		{
 			"offsets": [
-				6,
-				80
+				-434,
+				-270
 			],
-			"indices": [],
+			"loop": false,
 			"fps": 24,
 			"anim": "singLEFT",
-			"loop": false,
-			"name": "ultra left"
+			"indices": [],
+			"name": "Ultra_M2_Assets ultra left"
 		},
 		{
 			"offsets": [
-				231,
-				36
+				-410,
+				-314
 			],
-			"indices": [],
+			"loop": false,
 			"fps": 24,
 			"anim": "singRIGHT",
-			"loop": false,
-			"name": "ultra right"
+			"indices": [],
+			"name": "Ultra_M2_Assets ultra right"
 		},
 		{
 			"offsets": [
-				140,
-				238
+				-330,
+				-132
 			],
-			"indices": [],
+			"loop": false,
 			"fps": 24,
 			"anim": "singDOWN",
-			"loop": false,
-			"name": "ultra down"
+			"indices": [],
+			"name": "Ultra_M2_Assets ultra down"
 		},
 		{
 			"offsets": [
-				342,
-				324
+				-200,
+				-86
 			],
-			"indices": [],
+			"loop": false,
 			"fps": 24,
 			"anim": "singUP",
-			"loop": false,
-			"name": "ultra up"
+			"indices": [],
+			"name": "Ultra_M2_Assets ultra up"
 		}
 	],
 	"no_antialiasing": false,
@@ -74,5 +74,5 @@
 		-100
 	],
 	"sing_duration": 4,
-	"scale": 1.11
+	"scale": 2.21
 }

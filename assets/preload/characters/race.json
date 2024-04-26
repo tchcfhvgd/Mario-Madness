@@ -8,7 +8,7 @@
 			],
 			"anim": "idle",
 			"fps": 24,
-			"name": "RacistIdle",
+			"name": "Race_Mario_Assets Idle",
 			"indices": []
 		},
 		{
@@ -19,7 +19,7 @@
 			],
 			"anim": "singUP",
 			"fps": 24,
-			"name": "RacistUp",
+			"name": "Race_Mario_Assets Up",
 			"indices": []
 		},
 		{
@@ -30,7 +30,7 @@
 			],
 			"anim": "singDOWN",
 			"fps": 24,
-			"name": "RacistDown",
+			"name": "Race_Mario_Assets Down",
 			"indices": []
 		},
 		{
@@ -41,7 +41,7 @@
 			],
 			"anim": "singLEFT",
 			"fps": 24,
-			"name": "RacistLeft",
+			"name": "Race_Mario_Assets Left",
 			"indices": []
 		},
 		{
@@ -52,15 +52,15 @@
 			],
 			"anim": "singRIGHT",
 			"fps": 24,
-			"name": "RacistRight",
+			"name": "Race_Mario_Assets Right",
 			"indices": []
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Race_Mario_Assets",
 	"position": [
-		-80,
-		110
+		220,
+		300
 	],
 	"healthicon": "race2",
 	"flip_x": false,
@@ -70,9 +70,9 @@
 		42
 	],
 	"camera_position": [
-		-70,
-		-60
+		-380,
+		-230
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2.2
 }

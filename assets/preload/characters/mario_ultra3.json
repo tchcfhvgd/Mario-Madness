@@ -1,66 +1,66 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "ultra idle"
+			"fps": 24,
+			"name": "ultra idle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				-20
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "ultra left"
+			"fps": 24,
+			"name": "ultra left",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "ultra right"
+			"fps": 24,
+			"name": "ultra right",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "ultra down"
+			"fps": 24,
+			"name": "ultra down",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "ultra up"
+			"fps": 24,
+			"name": "ultra up",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Act_4_FINALE_Ultra",
 	"position": [
-		-60,
-		-50
+		190,
+		150
 	],
 	"healthicon": "ultram4",
 	"flip_x": false,
@@ -70,9 +70,9 @@
 		83
 	],
 	"camera_position": [
-		-70,
-		-100
+		-320,
+		-300
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2
 }

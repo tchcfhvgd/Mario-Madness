@@ -1,209 +1,209 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				-4,
 				30
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "IDLE"
+			"fps": 24,
+			"name": "IDLE",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				4,
 				31
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "LEFT"
+			"fps": 24,
+			"name": "LEFT",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-28,
 				90
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "UP"
+			"fps": 24,
+			"name": "UP",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-46,
 				31
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "RIGHT"
+			"fps": 24,
+			"name": "RIGHT",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
 				3,
 				37
 			],
-			"anim": "singLEFTmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "MISSLEFT",
-			"indices": []
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "MISSLEFT"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-29,
 				40
 			],
-			"anim": "singDOWNmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "MISSDOWN",
-			"indices": []
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "MISSDOWN"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-28,
 				94
 			],
-			"anim": "singUPmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "MISSUP",
-			"indices": []
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "MISSUP"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-45,
 				59
 			],
-			"anim": "singRIGHTmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "MISSRIGHT",
-			"indices": []
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "MISSRIGHT"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-21,
 				-6
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "DOWN",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "DOWN"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-7,
 				30
 			],
-			"anim": "idle-alt",
+			"loop": false,
 			"fps": 24,
-			"name": "SCAREDIDLE",
-			"indices": []
+			"anim": "idle-alt",
+			"indices": [],
+			"name": "SCAREDIDLE"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-10,
 				32
 			],
-			"anim": "singLEFT-alt",
+			"loop": false,
 			"fps": 24,
-			"name": "SCAREDLEFT",
-			"indices": []
+			"anim": "singLEFT-alt",
+			"indices": [],
+			"name": "SCAREDLEFT"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-28,
 				90
 			],
-			"anim": "singUP-alt",
+			"loop": false,
 			"fps": 24,
-			"name": "SCAREDUP",
-			"indices": []
+			"anim": "singUP-alt",
+			"indices": [],
+			"name": "SCAREDUP"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-21,
 				-6
 			],
-			"anim": "singDOWN-alt",
+			"loop": false,
 			"fps": 24,
-			"name": "SCAREDDOWN",
-			"indices": []
+			"anim": "singDOWN-alt",
+			"indices": [],
+			"name": "SCAREDDOWN"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-46,
 				31
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT-alt",
-			"indices": [],
-			"name": "SCAREDRIGHT"
+			"fps": 24,
+			"name": "SCAREDRIGHT",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-10,
 				52
 			],
-			"anim": "singLEFTmiss-alt",
+			"loop": false,
 			"fps": 24,
-			"name": "MISSSCAREDLEFT",
-			"indices": []
+			"anim": "singLEFTmiss-alt",
+			"indices": [],
+			"name": "MISSSCAREDLEFT"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-23,
 				123
 			],
-			"anim": "singUPmiss-alt",
+			"loop": false,
 			"fps": 24,
-			"name": "MISSSCAREDUP",
-			"indices": []
+			"anim": "singUPmiss-alt",
+			"indices": [],
+			"name": "MISSSCAREDUP"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-40,
 				61
 			],
-			"anim": "singRIGHTmiss-alt",
+			"loop": false,
 			"fps": 24,
-			"name": "MISSSCAREDRIGHT",
-			"indices": []
+			"anim": "singRIGHTmiss-alt",
+			"indices": [],
+			"name": "MISSSCAREDRIGHT"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-22,
 				0
 			],
-			"anim": "singDOWNmiss-alt",
+			"loop": false,
 			"fps": 24,
-			"name": "MISSSCAREDDOWN",
-			"indices": []
+			"anim": "singDOWNmiss-alt",
+			"indices": [],
+			"name": "MISSSCAREDDOWN"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/MRV_Boyfriend_Assets",
 	"position": [
-		0,
-		350
+		100,
+		460
 	],
 	"healthicon": "bfv",
 	"flip_x": true,
@@ -213,9 +213,9 @@
 		0
 	],
 	"camera_position": [
-		0,
-		0
+		100,
+		-110
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2
 }

@@ -1,14 +1,13 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "danceLeft",
+			"loop": false,
 			"fps": 24,
-			"name": "GF Dancing Beat",
+			"anim": "danceLeft",
 			"indices": [
 				0,
 				1,
@@ -25,17 +24,17 @@
 				12,
 				13,
 				14
-			]
+			],
+			"name": "GF Dancing Beat"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "danceRight",
+			"loop": false,
 			"fps": 24,
-			"name": "GF Dancing Beat",
+			"anim": "danceRight",
 			"indices": [
 				15,
 				16,
@@ -52,25 +51,26 @@
 				27,
 				28,
 				29
-			]
+			],
+			"name": "GF Dancing Beat"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "hey",
+			"loop": false,
 			"fps": 24,
-			"name": "GF Cheer",
-			"indices": []
+			"anim": "hey",
+			"indices": [],
+			"name": "GF Cheer"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/YouCannotBeatUS_GF_Assets",
 	"position": [
-		140,
-		65
+		320,
+		235
 	],
 	"healthicon": "gf",
 	"flip_x": false,
@@ -80,9 +80,9 @@
 		77
 	],
 	"camera_position": [
-		-20,
-		80
+		-200,
+		-90
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2
 }

@@ -2,76 +2,65 @@
 	"animations": [
 		{
 			"offsets": [
-				57,
-				120
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "hey",
-			"indices": [],
-			"name": "Wahoo"
-		},
-		{
-			"loop": false,
-			"offsets": [
 				95,
 				-100
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "PeachDown",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Coronation_Assets Down"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				480,
 				-100
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "PeachLeft",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Coronation_Assets Left"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				237,
 				172
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "PeachUp",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "Coronation_Assets Up"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				22,
 				-131
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "PeachRight",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Coronation_Assets Right"
 		},
 		{
 			"offsets": [
 				76,
 				156
 			],
-			"indices": [],
+			"loop": true,
 			"fps": 24,
 			"anim": "idle",
-			"loop": true,
-			"name": "PeachIdle"
+			"indices": [],
+			"name": "Coronation_Assets Idle"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Coronation_Assets",
 	"position": [
-		-80,
-		60
+		-70,
+		170
 	],
 	"healthicon": "peach",
 	"flip_x": false,
@@ -85,5 +74,5 @@
 		-220
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2.2
 }

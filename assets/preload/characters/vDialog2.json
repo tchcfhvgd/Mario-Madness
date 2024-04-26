@@ -19,15 +19,15 @@
 			],
 			"anim": "hey",
 			"fps": 24,
-			"name": "VDialogue",
+			"name": "Mr_Virtual_V2_DIALOGUE idle",
 			"indices": []
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Mr_Virtual_V2_DIALOGUE",
 	"position": [
-		-170,
-		-430
+		230,
+		10
 	],
 	"healthicon": "v",
 	"flip_x": false,
@@ -37,9 +37,9 @@
 		0
 	],
 	"camera_position": [
-		0,
-		0
+		-340,
+		-280
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2.6
 }

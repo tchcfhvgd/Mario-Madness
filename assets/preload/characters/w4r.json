@@ -8,52 +8,52 @@
 			],
 			"anim": "idle",
 			"fps": 24,
-			"name": "w4r idle",
+			"name": "W4R_Assets_New w4r idle",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
 				51,
-				-24
+				16
 			],
 			"anim": "singLEFT",
 			"fps": 24,
-			"name": "w4r left",
+			"name": "W4R_Assets_New w4r left",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
 				-55,
-				56
+				16
 			],
 			"anim": "singRIGHT",
 			"fps": 24,
-			"name": "w4r right",
+			"name": "W4R_Assets_New w4r right",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
 				82,
-				-63
+				27
 			],
 			"anim": "singDOWN",
 			"fps": 24,
-			"name": "w4r down",
+			"name": "W4R_Assets_New w4r down",
 			"indices": []
 		},
 		{
-			"offsets": [
-				80,
-				136
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				-20,
+				4
+			],
 			"anim": "singUP",
-			"indices": [],
-			"name": "w4r up"
+			"fps": 24,
+			"name": "W4R_Assets_New w4r up",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
@@ -74,5 +74,5 @@
 		0
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2.2
 }

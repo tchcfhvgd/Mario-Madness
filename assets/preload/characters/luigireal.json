@@ -1,48 +1,48 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				179,
 				-262
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "LuigiLeft0"
+			"fps": 24,
+			"name": "Lisreal Left",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-60,
 				-308
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "LuigiRight0"
+			"fps": 24,
+			"name": "Lisreal Right",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-166,
 				108
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "LuigiUp0"
+			"fps": 24,
+			"name": "Lisreal Up",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-89,
 				-358
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "LuigiDown0"
+			"fps": 24,
+			"name": "Lisreal Down",
+			"indices": []
 		},
 		{
 			"loop": true,
@@ -52,15 +52,15 @@
 			],
 			"anim": "idle",
 			"fps": 24,
-			"name": "LuigiIdle0",
+			"name": "Lisreal Idle",
 			"indices": []
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Lisreal",
 	"position": [
-		150,
-		250
+		300,
+		470
 	],
 	"healthicon": "real",
 	"flip_x": false,
@@ -70,9 +70,9 @@
 		120
 	],
 	"camera_position": [
-		130,
-		230
+		0,
+		20
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 1.9
 }

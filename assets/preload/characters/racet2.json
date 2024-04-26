@@ -1,15 +1,15 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				305,
 				18
 			],
-			"loop": false,
-			"fps": 30,
 			"anim": "idle",
-			"indices": [],
-			"name": "Racetraitors"
+			"fps": 30,
+			"name": "Racetalk2 idle",
+			"indices": []
 		},
 		{
 			"loop": false,
@@ -19,7 +19,7 @@
 			],
 			"anim": "talk",
 			"fps": 30,
-			"name": "Racetraitors",
+			"name": "Racetalk2 idle",
 			"indices": []
 		},
 		{
@@ -30,15 +30,15 @@
 			],
 			"anim": "talk2",
 			"fps": 35,
-			"name": "Racetraitors",
+			"name": "Racetalk2 idle",
 			"indices": []
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Racetalk2",
 	"position": [
-		-80,
-		110
+		1210,
+		310
 	],
 	"healthicon": "race2",
 	"flip_x": false,
@@ -52,5 +52,5 @@
 		-60
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2.6
 }
