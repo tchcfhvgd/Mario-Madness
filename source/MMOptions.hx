@@ -90,7 +90,6 @@ class MMOptions extends MusicBeatSubstate
 
 		#if android
 		addVirtualPad(UP_DOWN, A_B);
-		addPadCamera();
 		#end
 		
 		super.create();
@@ -139,32 +138,17 @@ class MMOptions extends MusicBeatSubstate
 			switch (options[curSelected])
 			{
 				case 'Notes':
-					#if android
-				        removeVirtualPad();
-				        #end
 					openSubState(new NotesSubstate());
 
 				case 'Controls':
-					#if android
-				        removeVirtualPad();
-				        #end
 					openSubState(new ControlsSubstate());
 
 				case 'Preferences':
-					#if android
-				        removeVirtualPad();
-				        #end
 					openSubState(new PreferencesSubstate());
 
 				case 'Mario Options':
-					#if android
-				        removeVirtualPad();
-				        #end
 					openSubState(new MarioSubstate());
 				case 'Delete Data':
-					#if android
-				        removeVirtualPad();
-				        #end
 					openSubState(new DeleteSubstate());
 			}
 		}
