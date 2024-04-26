@@ -59,8 +59,8 @@
 	"no_antialiasing": false,
 	"image": "characters/YouCannotBeatUS_DuckHunt",
 	"position": [
-		-300,
-		30
+		-60,
+		310
 	],
 	"healthicon": "hunt",
 	"flip_x": false,
@@ -70,9 +70,9 @@
 		52
 	],
 	"camera_position": [
-		-30,
-		-60
+		-270,
+		-240
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2
 }

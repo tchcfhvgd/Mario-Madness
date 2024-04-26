@@ -2,65 +2,65 @@
 	"animations": [
 		{
 			"offsets": [
-				0,
-				0
+				-470,
+				-430
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "idle",
 			"indices": [],
-			"name": "GXIdle"
+			"name": "GX_Sprites_FINAL GXIdle"
 		},
 		{
 			"offsets": [
-				45,
-				-60
+				-405,
+				-600
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singDOWN",
 			"indices": [],
-			"name": "GXDown"
+			"name": "GX_Sprites_FINAL GXDown"
 		},
 		{
 			"offsets": [
-				140,
-				-20
+				-280,
+				-500
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singLEFT",
 			"indices": [],
-			"name": "GXLeft"
+			"name": "GX_Sprites_FINAL GXLeft"
 		},
 		{
 			"offsets": [
-				137,
-				102
+				-343,
+				-288
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singUP",
 			"indices": [],
-			"name": "GXUp"
+			"name": "GX_Sprites_FINAL GXUp"
 		},
 		{
 			"offsets": [
-				-158,
-				49
+				-658,
+				-351
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singRIGHT",
 			"indices": [],
-			"name": "GXRight"
+			"name": "GX_Sprites_FINAL GXRight"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/GX_Sprites_FINAL",
 	"position": [
-		-390,
-		-320
+		-420,
+		-300
 	],
 	"healthicon": "gx",
 	"flip_x": false,
@@ -70,9 +70,9 @@
 		48
 	],
 	"camera_position": [
-		-150,
-		-220
+		100,
+		150
 	],
 	"sing_duration": 4,
-	"scale": 1.1
+	"scale": 2.9
 }

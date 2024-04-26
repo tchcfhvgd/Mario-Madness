@@ -13,7 +13,7 @@
 		},
 		{
 			"offsets": [
-				4,
+				2,
 				31
 			],
 			"loop": false,
@@ -23,26 +23,37 @@
 			"name": "LEFT"
 		},
 		{
+			"loop": false,
+			"offsets": [
+				-21,
+				-6
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "DOWN",
+			"indices": []
+		},
+		{
+			"loop": false,
 			"offsets": [
 				-28,
 				90
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "UP"
+			"fps": 24,
+			"name": "UP",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-46,
 				31
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "RIGHT"
+			"fps": 24,
+			"name": "RIGHT",
+			"indices": []
 		},
 		{
 			"loop": false,
@@ -124,19 +135,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				-21,
-				-6
-			],
-			"anim": "singDOWN",
-			"fps": 24,
-			"name": "DOWN",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-10,
-				20
+				-40,
+				30
 			],
 			"anim": "singRIGHT-alt",
 			"fps": 24,
@@ -144,33 +144,33 @@
 			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				12,
 				78
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "dodge",
-			"loop": false,
-			"name": "DODGE"
+			"fps": 24,
+			"name": "DODGE",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				108
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "hurt",
-			"loop": false,
-			"name": "HIT"
+			"fps": 24,
+			"name": "HIT",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/MM_Boyfriend_Assets_CAUSAPE",
 	"position": [
-		0,
-		350
+		110,
+		440
 	],
 	"healthicon": "bf",
 	"flip_x": true,
@@ -180,9 +180,9 @@
 		209
 	],
 	"camera_position": [
-		0,
-		0
+		110,
+		-90
 	],
-	"sing_duration": 4,
-	"scale": 1
+	"sing_duration": 4.1,
+	"scale": 2
 }

@@ -1,48 +1,48 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				3,
 				230
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 30,
-			"name": "PowerStar Down",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "PowerStar Down"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				22,
 				-67
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 30,
-			"name": "PowerStar Left",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "PowerStar Left"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				107,
 				31
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 30,
-			"name": "PowerStar Up",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "PowerStar Up"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-122,
 				103
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 30,
-			"name": "PowerStar Right",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "PowerStar Right"
 		},
 		{
 			"loop": false,
@@ -50,31 +50,31 @@
 				3,
 				230
 			],
-			"anim": "talk",
+			"anim": "idle",
 			"fps": 24,
 			"name": "ABPowerDialog",
-			"indices": []
-		},
-		{
-			"offsets": [
-				3,
-				230
-			],
 			"indices": [
 				0,
 				1
+			]
+		},
+		{
+			"offsets": [
+				3,
+				230
 			],
-			"fps": 24,
-			"anim": "idle",
 			"loop": false,
-			"name": "ABPowerDialog"
+			"fps": 24,
+			"anim": "talk",
+			"indices": [],
+			"name": "Powerstar_Mario_v2_Assets2 idle"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Powerstar_Mario_v2_Assets2",
 	"position": [
-		-100,
-		-90
+		220,
+		190
 	],
 	"healthicon": "devil",
 	"flip_x": false,
@@ -88,5 +88,5 @@
 		-60
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2.2
 }

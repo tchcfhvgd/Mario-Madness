@@ -1,14 +1,13 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				-18
 			],
-			"loop": false,
-			"anim": "sad",
 			"fps": 24,
-			"name": "gf sad",
+			"anim": "sad",
 			"indices": [
 				0,
 				1,
@@ -23,17 +22,17 @@
 				10,
 				11,
 				12
-			]
+			],
+			"name": "gf sad"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				-9
 			],
-			"loop": false,
-			"anim": "danceLeft",
 			"fps": 24,
-			"name": "GF Dancing Beat",
+			"anim": "danceLeft",
 			"indices": [
 				30,
 				0,
@@ -51,17 +50,17 @@
 				12,
 				13,
 				14
-			]
+			],
+			"name": "GF Dancing Beat"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				-9
 			],
-			"loop": false,
-			"anim": "danceRight",
 			"fps": 24,
-			"name": "GF Dancing Beat",
+			"anim": "danceRight",
 			"indices": [
 				15,
 				16,
@@ -78,14 +77,15 @@
 				27,
 				28,
 				29
-			]
+			],
+			"name": "GF Dancing Beat"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Promotion_GF_Assets",
 	"position": [
-		0,
-		0
+		180,
+		160
 	],
 	"healthicon": "gf",
 	"flip_x": false,
@@ -95,9 +95,9 @@
 		77
 	],
 	"camera_position": [
-		0,
-		0
+		-180,
+		-160
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2
 }

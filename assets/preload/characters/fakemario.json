@@ -8,7 +8,7 @@
 			],
 			"anim": "idle",
 			"fps": 24,
-			"name": "Idle",
+			"name": "MX_Faker_Assetss Idle",
 			"indices": []
 		},
 		{
@@ -19,7 +19,7 @@
 			],
 			"anim": "singDOWN",
 			"fps": 24,
-			"name": "Down",
+			"name": "MX_Faker_Assetss Down",
 			"indices": []
 		},
 		{
@@ -30,7 +30,7 @@
 			],
 			"anim": "singLEFT",
 			"fps": 24,
-			"name": "Left",
+			"name": "MX_Faker_Assetss Left",
 			"indices": []
 		},
 		{
@@ -41,7 +41,7 @@
 			],
 			"anim": "singUP",
 			"fps": 24,
-			"name": "Up",
+			"name": "MX_Faker_Assetss Up",
 			"indices": []
 		},
 		{
@@ -52,15 +52,15 @@
 			],
 			"anim": "singRIGHT",
 			"fps": 24,
-			"name": "Right",
+			"name": "MX_Faker_Assetss Right",
 			"indices": []
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/MX_Faker_Assetss",
 	"position": [
-		-40,
-		90
+		70,
+		290
 	],
 	"healthicon": "fake",
 	"flip_x": false,
@@ -74,5 +74,5 @@
 		-60
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2.2
 }

@@ -1,121 +1,121 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "PowerIdle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "PowerStar_Mario PowerIdle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				55,
 				-183
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 30,
-			"name": "PowerDown",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "PowerStar_Mario PowerDown"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				58,
 				-65
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 30,
-			"name": "PowerLeft",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "PowerStar_Mario PowerLeft"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				146,
 				40
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 30,
-			"name": "PowerUp",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "PowerStar_Mario PowerUp"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-86,
 				98
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 30,
-			"name": "PowerRight",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "PowerStar_Mario PowerRight"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				71,
 				364
 			],
-			"anim": "idle-alt",
+			"loop": false,
 			"fps": 24,
-			"name": "ALTPowerIdle",
-			"indices": []
+			"anim": "idle-alt",
+			"indices": [],
+			"name": "PowerStar_Mario ALTPowerIdle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				273,
 				218
 			],
-			"anim": "singLEFT-alt",
+			"loop": false,
 			"fps": 30,
-			"name": "ALTPowerLeft",
-			"indices": []
+			"anim": "singLEFT-alt",
+			"indices": [],
+			"name": "PowerStar_Mario ALTPowerLeft"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				212,
 				133
 			],
-			"anim": "singDOWN-alt",
+			"loop": false,
 			"fps": 30,
-			"name": "ALTPowerDown",
-			"indices": []
+			"anim": "singDOWN-alt",
+			"indices": [],
+			"name": "PowerStar_Mario ALTPowerDown"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				149,
 				439
 			],
-			"anim": "singUP-alt",
+			"loop": false,
 			"fps": 30,
-			"name": "ALTPowerUp",
-			"indices": []
+			"anim": "singUP-alt",
+			"indices": [],
+			"name": "PowerStar_Mario ALTPowerUp"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				95,
 				255
 			],
-			"anim": "singRIGHT-alt",
+			"loop": false,
 			"fps": 30,
-			"name": "ALTPowerRight",
-			"indices": []
+			"anim": "singRIGHT-alt",
+			"indices": [],
+			"name": "PowerStar_Mario ALTPowerRight"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/PowerStar_Mario",
 	"position": [
-		-100,
-		-90
+		190,
+		250
 	],
 	"healthicon": "devil",
 	"flip_x": false,
@@ -129,5 +129,5 @@
 		-60
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2.2
 }

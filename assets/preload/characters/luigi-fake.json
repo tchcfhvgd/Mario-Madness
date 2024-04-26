@@ -1,88 +1,88 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				161,
 				-331
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "FakerIdle"
+			"fps": 24,
+			"name": "FakerIdle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				229,
 				-328
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "FakerLeft"
+			"fps": 24,
+			"name": "FakerLeft",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				156,
 				-315
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "FakerUp"
+			"fps": 24,
+			"name": "FakerUp",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				130,
 				-338
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "FakerRight"
+			"fps": 24,
+			"name": "FakerRight",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				174,
 				-355
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "FakerDown"
+			"fps": 24,
+			"name": "FakerDown",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
 				158,
 				57
 			],
-			"anim": "Laugh",
+			"loop": false,
 			"fps": 24,
-			"name": "LuigiTransformation",
-			"indices": []
+			"anim": "Laugh",
+			"indices": [],
+			"name": "LuigiTransformation"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-14,
 				58
 			],
-			"anim": "Hey",
+			"loop": false,
 			"fps": 24,
-			"name": "LuigiLaugh",
-			"indices": []
+			"anim": "Hey",
+			"indices": [],
+			"name": "LuigiLaugh"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Too_Late_Luigi_Assets_causape",
 	"position": [
-		-210,
-		-230
+		-120,
+		-70
 	],
 	"healthicon": "fake-mrl",
 	"flip_x": false,
@@ -92,9 +92,9 @@
 		106
 	],
 	"camera_position": [
-		-60,
-		-70
+		120,
+		20
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2
 }

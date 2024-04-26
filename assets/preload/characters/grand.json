@@ -1,66 +1,66 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				-85,
 				6
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "GrandIdle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "GrandIdle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-35,
 				-170
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "GrandDown",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "GrandDown"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-66,
 				8
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "GrandLeft",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "GrandLeft"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-40,
 				136
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "GrandUp",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "GrandUp"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-108,
 				10
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "GrandRight",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "GrandRight"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Grand_Dad_Assets",
 	"position": [
-		0,
-		200
+		190,
+		360
 	],
 	"healthicon": "gdad",
 	"flip_x": false,
@@ -70,9 +70,9 @@
 		126
 	],
 	"camera_position": [
-		-30,
-		-60
+		-220,
+		-350
 	],
 	"sing_duration": 4,
-	"scale": 1.2
+	"scale": 2.4
 }

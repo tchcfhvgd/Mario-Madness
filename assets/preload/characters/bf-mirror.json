@@ -169,8 +169,8 @@
 	"no_antialiasing": false,
 	"image": "characters/MM_Boyfriend_Assets_CAUSAPE",
 	"position": [
-		0,
-		350
+		110,
+		450
 	],
 	"healthicon": "bf",
 	"flip_x": false,
@@ -180,9 +180,9 @@
 		209
 	],
 	"camera_position": [
-		0,
-		0
+		-140,
+		-90
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2
 }

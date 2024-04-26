@@ -1,58 +1,58 @@
 {
 	"animations": [
 		{
-			"offsets": [
-				0,
-				0
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				-120,
+				-108
+			],
 			"anim": "idle",
-			"indices": [],
-			"name": "LG Idle"
+			"fps": 24,
+			"name": "LG_Sprites LG Idle",
+			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				-107,
-				-24
+				-244,
+				-133
 			],
 			"anim": "singDOWN",
 			"fps": 24,
-			"name": "LG Down",
+			"name": "LG_Sprites LG Down",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				-151,
-				-31
+				-281,
+				-146
 			],
 			"anim": "singRIGHT",
 			"fps": 24,
-			"name": "LG Right",
+			"name": "LG_Sprites LG Right",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				17,
-				-42
+				-103,
+				-159
 			],
 			"anim": "singLEFT",
 			"fps": 24,
-			"name": "LG Left",
+			"name": "LG_Sprites LG Left",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				-104,
-				74
+				-244,
+				-24
 			],
 			"anim": "singUP",
 			"fps": 24,
-			"name": "LG Up",
+			"name": "LG_Sprites LG Up",
 			"indices": []
 		}
 	],
@@ -60,7 +60,7 @@
 	"image": "characters/LG_Sprites",
 	"position": [
 		-90,
-		80
+		150
 	],
 	"healthicon": "LG",
 	"flip_x": false,
@@ -74,5 +74,5 @@
 		-60
 	],
 	"sing_duration": 4,
-	"scale": 0.6
+	"scale": 1.5
 }

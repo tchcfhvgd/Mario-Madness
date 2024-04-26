@@ -5,17 +5,20 @@
 				2,
 				-19
 			],
-			"indices": [],
+			"loop": false,
 			"fps": 24,
 			"anim": "cheer",
-			"loop": false,
-			"name": "GFAnim1"
+			"indices": [],
+			"name": "Race_Mario_Girlfriend_Assets_v1 Anim"
 		},
 		{
 			"offsets": [
 				2,
 				-19
 			],
+			"loop": false,
+			"fps": 24,
+			"anim": "danceRight",
 			"indices": [
 				15,
 				16,
@@ -33,16 +36,16 @@
 				28,
 				29
 			],
-			"fps": 24,
-			"anim": "danceRight",
-			"loop": false,
-			"name": "GFIdle"
+			"name": "Race_Mario_Girlfriend_Assets_v1 aaaa"
 		},
 		{
 			"offsets": [
 				2,
 				-19
 			],
+			"loop": false,
+			"fps": 24,
+			"anim": "danceLeft",
 			"indices": [
 				30,
 				0,
@@ -61,53 +64,25 @@
 				13,
 				14
 			],
-			"fps": 24,
-			"anim": "danceLeft",
-			"loop": false,
-			"name": "GFIdle"
-		},
-		{
-			"offsets": [
-				2,
-				-46
-			],
-			"indices": [
-				0,
-				1,
-				2,
-				3,
-				4,
-				5,
-				6,
-				7,
-				8,
-				9,
-				10,
-				11,
-				12
-			],
-			"fps": 24,
-			"anim": "sad",
-			"loop": false,
-			"name": "GFMiss"
+			"name": "Race_Mario_Girlfriend_Assets_v1 aaaa"
 		},
 		{
 			"offsets": [
 				2,
 				-28
 			],
-			"indices": [],
+			"loop": false,
 			"fps": 24,
 			"anim": "scared",
-			"loop": false,
-			"name": "GFShoked"
+			"indices": [],
+			"name": "Race_Mario_Girlfriend_Assets_v1 idle"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Race_Mario_Girlfriend_Assets_v1",
 	"position": [
-		-90,
-		170
+		-30,
+		290
 	],
 	"healthicon": "gf",
 	"flip_x": false,
@@ -121,5 +96,5 @@
 		0
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2.3
 }

@@ -1,121 +1,66 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
-				51,
-				115
+				-66,
+				65
 			],
-			"anim": "singLEFTmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "GFMissLeft",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-90,
-				137
-			],
-			"anim": "singUPmiss",
-			"fps": 24,
-			"name": "GFMissUp",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-106,
-				118
-			],
-			"anim": "singRIGHTmiss",
-			"fps": 24,
-			"name": "GFMissRight",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-16,
-				75
-			],
 			"anim": "singDOWN",
-			"fps": 24,
-			"name": "GFDown",
-			"indices": []
+			"indices": [],
+			"name": "AllStars_Girlfriend_Assets_v2 GFDown"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				-17,
-				108
+				-1,
+				89
 			],
-			"anim": "singDOWNmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "GFMissDown",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				49,
-				99
-			],
 			"anim": "singLEFT",
-			"fps": 24,
-			"name": "GFLeft",
-			"indices": []
+			"indices": [],
+			"name": "AllStars_Girlfriend_Assets_v2 GFLeft"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				-76,
+				-116,
 				137
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "GFUp",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "AllStars_Girlfriend_Assets_v2 GFUp"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				-105,
+				-145,
 				107
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "GFRight",
-			"indices": []
+			"indices": [],
+			"name": "AllStars_Girlfriend_Assets_v2 GFRight"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				-52,
-				106
+				-92,
+				96
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "idle",
-			"fps": 24,
-			"name": "GFIdle",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				14,
-				119
-			],
-			"anim": "dodge",
-			"fps": 24,
-			"name": "GF Dodge",
-			"indices": []
+			"indices": [],
+			"name": "AllStars_Girlfriend_Assets_v2 GFIdle"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/AllStars_Girlfriend_Assets_v2",
 	"position": [
-		0,
-		290
+		30,
+		390
 	],
 	"healthicon": "gf",
 	"flip_x": false,
@@ -125,9 +70,9 @@
 		77
 	],
 	"camera_position": [
-		0,
-		30
+		-440,
+		-270
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 1.9
 }

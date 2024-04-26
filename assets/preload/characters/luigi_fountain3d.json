@@ -9,7 +9,7 @@
 			"fps": 24,
 			"anim": "idle",
 			"indices": [],
-			"name": "Idle"
+			"name": "Abandoned_Luigi_3D_AssetsFINAL Idle"
 		},
 		{
 			"offsets": [
@@ -20,7 +20,7 @@
 			"fps": 24,
 			"anim": "singRIGHT",
 			"indices": [],
-			"name": "Right"
+			"name": "Abandoned_Luigi_3D_AssetsFINAL Right"
 		},
 		{
 			"offsets": [
@@ -31,7 +31,7 @@
 			"fps": 24,
 			"anim": "singDOWN",
 			"indices": [],
-			"name": "Down"
+			"name": "Abandoned_Luigi_3D_AssetsFINAL Down"
 		},
 		{
 			"offsets": [
@@ -42,7 +42,7 @@
 			"fps": 24,
 			"anim": "singUP",
 			"indices": [],
-			"name": "Up"
+			"name": "Abandoned_Luigi_3D_AssetsFINAL Up"
 		},
 		{
 			"offsets": [
@@ -53,7 +53,7 @@
 			"fps": 24,
 			"anim": "singLEFT",
 			"indices": [],
-			"name": "Left"
+			"name": "Abandoned_Luigi_3D_AssetsFINAL Left"
 		},
 		{
 			"offsets": [
@@ -63,15 +63,32 @@
 			"loop": false,
 			"fps": 24,
 			"anim": "Hey",
-			"indices": [0,1,2,3,4,5,6,7,8,8,8,8,8,8,8,8],
-			"name": "Laugh"
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				8,
+				8,
+				8,
+				8,
+				8,
+				8,
+				8
+			],
+			"name": "Abandoned_Luigi_3D_AssetsFINAL Laugh"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Abandoned_Luigi_3D_AssetsFINAL",
 	"position": [
-		0,
-		-150
+		170,
+		50
 	],
 	"healthicon": "wdwluigi3D",
 	"flip_x": false,
@@ -81,10 +98,9 @@
 		0
 	],
 	"camera_position": [
-		-45,
-		420
+		-325,
+		-10
 	],
 	"sing_duration": 4,
-	"idleReturn": true,
-	"scale": 0.5
+	"scale": 1
 }

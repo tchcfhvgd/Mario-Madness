@@ -1,59 +1,59 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				-55,
 				86
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "LuigiIdle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "Luigi_IHY_Assets_New2 Idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				2,
 				-96
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "LuigiDown",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Luigi_IHY_Assets_New2 Down"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				151,
 				149
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "LuigiLeft",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Luigi_IHY_Assets_New2 Left"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				41,
 				236
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "LuigiUp",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "Luigi_IHY_Assets_New2 Up"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-2,
 				86
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "LuigiRight",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Luigi_IHY_Assets_New2 Right"
 		},
 		{
 			"offsets": [
@@ -64,7 +64,7 @@
 			"fps": 24,
 			"anim": "fall",
 			"indices": [],
-			"name": "Luigi Falling"
+			"name": "Luigi_IHY_Assets_New2 Falling"
 		},
 		{
 			"offsets": [
@@ -75,36 +75,36 @@
 			"fps": 24,
 			"anim": "hand",
 			"indices": [],
-			"name": "Luigi Lava Hand"
+			"name": "Luigi_IHY_Assets_New2 Lava Hand"
 		},
 		{
+			"offsets": [
+				44,
+				218
+			],
 			"loop": true,
-			"offsets": [
-				44,
-				218
-			],
-			"anim": "knees-loop",
 			"fps": 24,
-			"name": "Luigi Knees Idle",
-			"indices": []
+			"anim": "knees-loop",
+			"indices": [],
+			"name": "Luigi_IHY_Assets_New2 Knees Idle"
 		},
 		{
 			"offsets": [
 				44,
 				218
 			],
-			"indices": [],
+			"loop": false,
 			"fps": 24,
 			"anim": "knees",
-			"loop": false,
-			"name": "Luigi Knees0"
+			"indices": [],
+			"name": "Luigi_IHY_Assets_New2 Knees"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Luigi_IHY_Assets_New2",
 	"position": [
-		-40,
-		20
+		170,
+		230
 	],
 	"healthicon": "luigiH2",
 	"flip_x": false,
@@ -114,9 +114,9 @@
 		0
 	],
 	"camera_position": [
-		-30,
-		-60
+		-220,
+		-460
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 1.8
 }

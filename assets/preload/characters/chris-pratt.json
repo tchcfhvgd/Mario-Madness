@@ -9,7 +9,7 @@
 			"fps": 24,
 			"anim": "idle",
 			"indices": [],
-			"name": "chris pratt idle"
+			"name": "christopher_pratt idle"
 		},
 		{
 			"offsets": [
@@ -20,7 +20,7 @@
 			"fps": 24,
 			"anim": "singLEFT",
 			"indices": [],
-			"name": "chris pratt left"
+			"name": "christopher_pratt  left"
 		},
 		{
 			"offsets": [
@@ -31,7 +31,7 @@
 			"fps": 24,
 			"anim": "singRIGHT",
 			"indices": [],
-			"name": "chris pratt right"
+			"name": "christopher_pratt right"
 		},
 		{
 			"offsets": [
@@ -42,7 +42,7 @@
 			"fps": 24,
 			"anim": "singDOWN",
 			"indices": [],
-			"name": "chris pratt down"
+			"name": "christopher_pratt down"
 		},
 		{
 			"offsets": [
@@ -53,7 +53,7 @@
 			"fps": 24,
 			"anim": "singUP",
 			"indices": [],
-			"name": "chris pratt up"
+			"name": "christopher_pratt up"
 		},
 		{
 			"offsets": [
@@ -64,25 +64,25 @@
 			"fps": 24,
 			"anim": "hey",
 			"indices": [],
-			"name": "chris pratt mario"
+			"name": "christopher_pratt mario"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-9,
 				0
 			],
-			"anim": "itsame",
+			"loop": false,
 			"fps": 24,
-			"name": "chris pratt itsame",
-			"indices": []
+			"anim": "itsame",
+			"indices": [],
+			"name": "christopher_pratt itsame"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/christopher_pratt",
 	"position": [
-		20,
-		260
+		350,
+		380
 	],
 	"healthicon": "chris",
 	"flip_x": false,
@@ -96,5 +96,5 @@
 		-20
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2.2
 }

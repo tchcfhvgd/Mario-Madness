@@ -1,154 +1,154 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				-5,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "BF idle dance"
+			"fps": 24,
+			"name": "BF idle dance",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				33,
 				11
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "BF NOTE LEFT0"
+			"fps": 24,
+			"name": "BF NOTE LEFT0",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-42,
 				-27
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "BF NOTE DOWN0"
+			"fps": 24,
+			"name": "BF NOTE DOWN0",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-65,
 				27
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "BF NOTE UP0"
+			"fps": 24,
+			"name": "BF NOTE UP0",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-69,
 				6
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "BF NOTE RIGHT0"
+			"fps": 24,
+			"name": "BF NOTE RIGHT0",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				17,
 				191
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "firstDeath",
-			"indices": [],
-			"name": "Boyfriend dies"
+			"fps": 24,
+			"name": "Boyfriend dies",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				17,
 				191
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "deathLoop",
-			"indices": [],
-			"name": "Boyfriend Dead Loop"
+			"fps": 24,
+			"name": "Boyfriend Dead Loop",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				17,
 				209
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "deathConfirm",
-			"indices": [],
-			"name": "Boyfriend Dead confirm"
+			"fps": 24,
+			"name": "Boyfriend Dead confirm",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				20,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "dodge",
-			"indices": [],
-			"name": "Boyfriend Dodge"
+			"fps": 24,
+			"name": "Boyfriend Dodge",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-42,
 				-27
 			],
-			"anim": "singDOWNmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "BF NOTE DOWN MISS",
-			"indices": []
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "BF NOTE DOWN MISS"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-55,
 				28
 			],
-			"anim": "singUPmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "BF NOTE UP MISS",
-			"indices": []
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "BF NOTE UP MISS"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-67,
 				6
 			],
-			"anim": "singRIGHTmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "BF NOTE RIGHT MISS",
-			"indices": []
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "BF NOTE RIGHT MISS"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				31,
 				9
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singLEFTmiss",
-			"loop": false,
-			"name": "BF NOTE LEFT MISS"
+			"fps": 24,
+			"name": "BF NOTE LEFT MISS",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Grand_DadBFSTINK",
 	"position": [
-		0,
-		350
+		100,
+		460
 	],
 	"healthicon": "bfgd",
 	"flip_x": true,
@@ -158,9 +158,9 @@
 		209
 	],
 	"camera_position": [
-		0,
-		0
+		100,
+		-160
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2
 }

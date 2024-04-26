@@ -1,78 +1,78 @@
 {
-	"animations": [
-		{
-			"offsets": [
-				70,
-				-16
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singLEFT",
-			"indices": [],
-			"name": "Left"
-		},
-		{
-			"offsets": [
-				15,
-				8
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singRIGHT",
-			"indices": [],
-			"name": "Right"
-		},
-		{
-			"offsets": [
-				-104,
-				120
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "singUP",
-			"indices": [],
-			"name": "Up"
-		},
-		{
-			"offsets": [
-				0,
-				0
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "idle",
-			"indices": [],
-			"name": "Idle"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				111,
-				-172
-			],
-			"anim": "singDOWN",
-			"fps": 24,
-			"name": "Down",
-			"indices": []
-		}
-	],
-	"no_antialiasing": false,
-	"image": "characters/Act_4_FINALE_BF",
-	"position": [
-		-160,
-		140
-	],
-	"healthicon": "bf4",
-	"flip_x": true,
-	"healthbar_colors": [
-		162,
-		227,
-		248
-	],
-	"camera_position": [
-		70,
-		20
-	],
-	"sing_duration": 4,
-	"scale": 1
+  "animations": [
+    {
+      "offsets": [
+        -180,
+        -6
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "singLEFT",
+      "indices": [],
+      "name": "Act_4_FINALE_BF Left"
+    },
+    {
+      "offsets": [
+        -306,
+        18
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "singRIGHT",
+      "indices": [],
+      "name": "Act_4_FINALE_BF Right"
+    },
+    {
+      "offsets": [
+        -408,
+        140
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "singUP",
+      "indices": [],
+      "name": "Act_4_FINALE_BF Up"
+    },
+    {
+      "offsets": [
+        -260,
+        0
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "idle",
+      "indices": [],
+      "name": "Act_4_FINALE_BF Idle"
+    },
+    {
+      "offsets": [
+        -159,
+        -182
+      ],
+      "loop": false,
+      "fps": 24,
+      "anim": "singDOWN",
+      "indices": [],
+      "name": "Act_4_FINALE_BF Down"
+    }
+  ],
+  "no_antialiasing": true,
+  "image": "characters/Act_4_FINALE_BF",
+  "position": [
+    -190,
+    210
+  ],
+  "healthicon": "bf4",
+  "flip_x": true,
+  "healthbar_colors": [
+    162,
+    227,
+    248
+  ],
+  "camera_position": [
+    40,
+    -100
+  ],
+  "sing_duration": 4,
+  "scale": 2
 }

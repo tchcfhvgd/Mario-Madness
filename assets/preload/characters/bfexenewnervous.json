@@ -1,132 +1,132 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				3,
 				37
 			],
-			"anim": "singLEFTmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "MISSLEFT",
-			"indices": []
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "MISSLEFT"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-29,
 				40
 			],
-			"anim": "singDOWNmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "MISSDOWN",
-			"indices": []
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "MISSDOWN"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-28,
 				94
 			],
-			"anim": "singUPmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "MISSUP",
-			"indices": []
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "MISSUP"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-43,
 				63
 			],
-			"anim": "singRIGHTmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "MISSRIGHT",
-			"indices": []
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "MISSRIGHT"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				4,
 				31
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "LEFTSCARED",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "LEFTSCARED"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-26,
 				-4
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "DOWNSCARED",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "DOWNSCARED"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-30,
 				92
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "UPSCARED",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "UPSCARED"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-46,
 				31
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "RIGHTSCARED",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "RIGHTSCARED"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				12,
 				78
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "dodge",
-			"indices": [],
-			"name": "DODGE"
+			"fps": 24,
+			"name": "DODGE",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				108
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "hurt",
-			"indices": [],
-			"name": "HIT"
+			"fps": 24,
+			"name": "HIT",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-4,
 				30
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "IDLESCARED",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "IDLESCARED"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/MM_Boyfriend_SHADED_Assetsa",
 	"position": [
-		0,
-		350
+		100,
+		450
 	],
 	"healthicon": "bf",
 	"flip_x": true,
@@ -136,9 +136,9 @@
 		209
 	],
 	"camera_position": [
-		0,
-		0
+		100,
+		-100
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2
 }

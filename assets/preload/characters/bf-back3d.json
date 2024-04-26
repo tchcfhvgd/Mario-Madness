@@ -1,110 +1,110 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "3d Idle"
+			"fps": 24,
+			"name": "3d Idle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				32,
 				-35
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "3d Left"
+			"fps": 24,
+			"name": "3d Left",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				52,
 				-49
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "3d Down"
+			"fps": 24,
+			"name": "3d Down",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-40,
 				99
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "3d Up"
+			"fps": 24,
+			"name": "3d Up",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				16,
 				-3
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "3d Right"
+			"fps": 24,
+			"name": "3d Right",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-42,
 				26
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singLEFTmiss",
-			"loop": false,
-			"name": "3d Miss Left"
+			"fps": 24,
+			"name": "3d Miss Left",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-33,
 				-30
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singDOWNmiss",
-			"loop": false,
-			"name": "3d Miss Down"
+			"fps": 24,
+			"name": "3d Miss Down",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-40,
 				98
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singUPmiss",
-			"loop": false,
-			"name": "3d Miss Up"
+			"fps": 24,
+			"name": "3d Miss Up",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				15,
 				38
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singRIGHTmiss",
-			"loop": false,
-			"name": "3d Miss Right"
+			"fps": 24,
+			"name": "3d Miss Right",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Abandoned_BF_3D_Assets",
 	"position": [
-		-210,
-		10
+		-30,
+		210
 	],
 	"healthicon": "bf3D",
 	"flip_x": true,
@@ -114,9 +114,9 @@
 		209
 	],
 	"camera_position": [
-		0,
-		0
+		180,
+		-200
 	],
 	"sing_duration": 4,
-	"scale": 0.85
+	"scale": 1.7
 }

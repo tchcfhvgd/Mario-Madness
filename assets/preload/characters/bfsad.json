@@ -98,13 +98,24 @@
 			"anim": "singDOWN",
 			"indices": [],
 			"name": "SCAREDDOWN"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-19,
+				76
+			],
+			"anim": "intro",
+			"fps": 20,
+			"name": "Act3Intro",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/MM_Boyfriend_Assets_cryingfuck",
 	"position": [
-		0,
-		350
+		140,
+		470
 	],
 	"healthicon": "bfsad",
 	"flip_x": true,
@@ -114,9 +125,9 @@
 		209
 	],
 	"camera_position": [
-		0,
-		0
+		140,
+		-130
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2
 }

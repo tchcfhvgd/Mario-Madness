@@ -4,36 +4,11 @@
 			"loop": false,
 			"offsets": [
 				0,
-				-18
-			],
-			"anim": "sad",
-			"fps": 24,
-			"name": "gf sad",
-			"indices": [
-				0,
-				1,
-				2,
-				3,
-				4,
-				5,
-				6,
-				7,
-				8,
-				9,
-				10,
-				11,
-				12
-			]
-		},
-		{
-			"loop": false,
-			"offsets": [
-				0,
 				-9
 			],
 			"anim": "danceLeft",
 			"fps": 24,
-			"name": "GF Dancing Beat",
+			"name": "IHY_Girlfriend_Assets_v2papu idle",
 			"indices": [
 				30,
 				0,
@@ -61,7 +36,7 @@
 			],
 			"anim": "danceRight",
 			"fps": 24,
-			"name": "GF Dancing Beat",
+			"name": "IHY_Girlfriend_Assets_v2papu idle",
 			"indices": [
 				15,
 				16,
@@ -84,8 +59,8 @@
 	"no_antialiasing": false,
 	"image": "characters/IHY_Girlfriend_Assets_v2papu",
 	"position": [
-		210,
-		130
+		310,
+		260
 	],
 	"healthicon": "gf",
 	"flip_x": false,
@@ -99,5 +74,5 @@
 		0
 	],
 	"sing_duration": 4,
-	"scale": 1.1
+	"scale": 2.1
 }

@@ -1,121 +1,121 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				-2,
 				1
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "BFLeft0",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "BFLeft0"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-5,
 				0
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "BFRight0",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "BFRight0"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-8,
 				23
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "BFUp0",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "BFUp0"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "BFIldle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "BFIldle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-4,
-				-1
+				0
 			],
-			"anim": "idle-alt",
+			"loop": false,
 			"fps": 24,
-			"name": "BFIdleALT",
-			"indices": []
+			"anim": "idle-alt",
+			"indices": [],
+			"name": "BFIdleALT"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				86,
 				13
 			],
-			"anim": "singLEFT-alt",
+			"loop": false,
 			"fps": 24,
-			"name": "BFLeftALT",
-			"indices": []
+			"anim": "singLEFT-alt",
+			"indices": [],
+			"name": "BFLeftALT"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-10,
 				-4
 			],
-			"anim": "singRIGHT-alt",
+			"loop": false,
 			"fps": 24,
-			"name": "BFRightALT",
-			"indices": []
+			"anim": "singRIGHT-alt",
+			"indices": [],
+			"name": "BFRightALT"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				60,
 				160
 			],
-			"anim": "singUP-alt",
+			"loop": false,
 			"fps": 24,
-			"name": "BFUpALT",
-			"indices": []
+			"anim": "singUP-alt",
+			"indices": [],
+			"name": "BFUpALT"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				25,
 				-100
 			],
-			"anim": "singDOWN-alt",
+			"loop": false,
 			"fps": 24,
-			"name": "BFDownALT",
-			"indices": []
+			"anim": "singDOWN-alt",
+			"indices": [],
+			"name": "BFDownALT"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				2,
 				-15
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singDOWN",
-			"loop": false,
-			"name": "BFDown0"
+			"fps": 24,
+			"name": "BFDown0",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Act_4_secondperspective",
 	"position": [
-		-10,
-		190
+		110,
+		340
 	],
 	"healthicon": "bf4",
 	"flip_x": true,
@@ -125,9 +125,9 @@
 		209
 	],
 	"camera_position": [
-		70,
-		20
+		20,
+		-140
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2
 }

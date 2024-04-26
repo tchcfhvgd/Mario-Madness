@@ -5,9 +5,6 @@
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
-			"anim": "danceLeft",
 			"indices": [
 				0,
 				1,
@@ -25,16 +22,16 @@
 				13,
 				14
 			],
-			"name": "ldo gf dance"
+			"fps": 24,
+			"anim": "danceLeft",
+			"loop": false,
+			"name": "GF_LDO dance"
 		},
 		{
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
-			"anim": "danceRight",
 			"indices": [
 				15,
 				16,
@@ -52,7 +49,10 @@
 				28,
 				29
 			],
-			"name": "ldo gf dance"
+			"fps": 24,
+			"anim": "danceRight",
+			"loop": false,
+			"name": "GF_LDO dance"
 		},
 		{
 			"offsets": [
@@ -63,7 +63,7 @@
 			"fps": 24,
 			"anim": "why",
 			"loop": false,
-			"name": "ldo gf why"
+			"name": "GF_LDO idle"
 		},
 		{
 			"offsets": [
@@ -90,7 +90,7 @@
 			"fps": 24,
 			"anim": "danceLeft-alt",
 			"loop": false,
-			"name": "ldo gf dance annoyed"
+			"name": "GF_LDO dance annoyed"
 		},
 		{
 			"offsets": [
@@ -117,7 +117,7 @@
 			"fps": 24,
 			"anim": "danceRight-alt",
 			"loop": false,
-			"name": "ldo gf dance annoyed"
+			"name": "GF_LDO dance annoyed"
 		}
 	],
 	"no_antialiasing": false,

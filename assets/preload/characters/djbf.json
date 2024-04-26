@@ -1,103 +1,59 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				-64,
 				116
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "BFIdle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "BFIdle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-70,
 				116
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "BFDown",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "BFDown"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-51,
 				116
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "BFLeft",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "BFLeft"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-77,
 				116
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "BFUp",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "BFUp"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-84,
 				116
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "BFRight",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-67,
-				116
-			],
-			"anim": "singDOWNmiss",
-			"fps": 24,
-			"name": "BFMissDown",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-51,
-				116
-			],
-			"anim": "singLEFTmiss",
-			"fps": 24,
-			"name": "BFMissLeft",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-77,
-				116
-			],
-			"anim": "singUPmiss",
-			"fps": 24,
-			"name": "BFMissUp",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-78,
-				116
-			],
-			"anim": "singRIGHTmiss",
-			"fps": 24,
-			"name": "BFMissRight",
-			"indices": []
+			"indices": [],
+			"name": "BFRight"
 		}
 	],
 	"no_antialiasing": false,

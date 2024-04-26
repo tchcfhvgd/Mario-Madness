@@ -1,103 +1,59 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "idle",
-			"fps": 24,
-			"name": "facecam bf idle",
-			"indices": []
+			"indices": [],
+			"name": "facecam bf idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFT",
-			"fps": 24,
-			"name": "facecam bf left",
-			"indices": []
+			"indices": [],
+			"name": "facecam bf left"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWN",
-			"fps": 24,
-			"name": "facecam bf down",
-			"indices": []
+			"indices": [],
+			"name": "facecam bf down"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singUP",
-			"fps": 24,
-			"name": "facecam bf up",
-			"indices": []
+			"indices": [],
+			"name": "facecam bf up"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "facecam bf right",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
-			"anim": "singLEFTmiss",
-			"fps": 24,
-			"name": "facecam bf miss left",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
-			"anim": "singDOWNmiss",
-			"fps": 24,
-			"name": "facecam bf miss down",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
-			"anim": "singUPmiss",
-			"fps": 24,
-			"name": "facecam bf miss up",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
-			"anim": "singRIGHTmiss",
-			"fps": 24,
-			"name": "facecam bf miss right",
-			"indices": []
+			"indices": [],
+			"name": "facecam bf right"
 		}
 	],
 	"no_antialiasing": false,

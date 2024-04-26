@@ -1,103 +1,59 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				-5,
 				20
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "IDLE",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "MM_IHY_Boyfriend_AssetsFINAL IDLE"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-24,
 				-23
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "DOWN",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "MM_IHY_Boyfriend_AssetsFINAL DOWN"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				4,
 				26
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "LEFT",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "MM_IHY_Boyfriend_AssetsFINAL LEFT"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-30,
 				89
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "UP",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "MM_IHY_Boyfriend_AssetsFINAL UP"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-1,
 				12
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "RIGHT",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				1,
-				52
-			],
-			"anim": "singLEFTmiss",
-			"fps": 24,
-			"name": "MISSLEFT",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-31,
-				32
-			],
-			"anim": "singDOWNmiss",
-			"fps": 24,
-			"name": "MISSDOWN",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-26,
-				87
-			],
-			"anim": "singUPmiss",
-			"fps": 24,
-			"name": "MISSUP",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-2,
-				23
-			],
-			"anim": "singRIGHTmiss",
-			"fps": 24,
-			"name": "MISSRIGHT",
-			"indices": []
+			"indices": [],
+			"name": "MM_IHY_Boyfriend_AssetsFINAL RIGHT"
 		},
 		{
 			"offsets": [
@@ -108,7 +64,7 @@
 			"fps": 24,
 			"anim": "spin",
 			"indices": [],
-			"name": "Spin"
+			"name": "MM_IHY_Boyfriend_AssetsFINAL Spin"
 		},
 		{
 			"offsets": [
@@ -119,7 +75,7 @@
 			"fps": 24,
 			"anim": "prejump",
 			"indices": [],
-			"name": "PreJump"
+			"name": "MM_IHY_Boyfriend_AssetsFINAL PreJump"
 		},
 		{
 			"offsets": [
@@ -130,7 +86,7 @@
 			"fps": 24,
 			"anim": "attack",
 			"indices": [],
-			"name": "Attack"
+			"name": "MM_IHY_Boyfriend_AssetsFINAL Attack"
 		},
 		{
 			"offsets": [
@@ -141,14 +97,14 @@
 			"fps": 24,
 			"anim": "hey",
 			"indices": [],
-			"name": "Yeah"
+			"name": "MM_IHY_Boyfriend_AssetsFINAL Yeah"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/MM_IHY_Boyfriend_AssetsFINAL",
 	"position": [
-		0,
-		340
+		220,
+		460
 	],
 	"healthicon": "bfworld",
 	"flip_x": true,
@@ -158,9 +114,9 @@
 		209
 	],
 	"camera_position": [
-		0,
-		0
+		480,
+		-110
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 1.9
 }

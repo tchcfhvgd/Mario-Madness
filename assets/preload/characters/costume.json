@@ -1,121 +1,121 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				450
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "Idle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "Idle"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-82,
 				278
 			],
-			"loop": false,
-			"fps": 28,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "Right"
+			"fps": 28,
+			"name": "Right",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				182,
 				419
 			],
-			"loop": false,
-			"fps": 28,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "Left"
+			"fps": 28,
+			"name": "Left",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				78,
 				177
 			],
-			"loop": false,
-			"fps": 28,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "Down"
+			"fps": 28,
+			"name": "Down",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				52,
 				499
 			],
-			"loop": false,
-			"fps": 28,
 			"anim": "singUP",
-			"indices": [],
-			"name": "Up"
+			"fps": 28,
+			"name": "Up",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				155,
 				103
 			],
-			"loop": false,
-			"fps": 28,
 			"anim": "singRIGHT-alt",
-			"indices": [],
-			"name": "Slumped Right"
+			"fps": 28,
+			"name": "Slumped Right",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				152,
 				88
 			],
-			"loop": false,
-			"fps": 28,
 			"anim": "singLEFT-alt",
-			"indices": [],
-			"name": "Slumped Left"
+			"fps": 28,
+			"name": "Slumped Left",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				158,
 				80
 			],
-			"loop": false,
-			"fps": 28,
 			"anim": "singDOWN-alt",
-			"indices": [],
-			"name": "Slumped Down"
+			"fps": 28,
+			"name": "Slumped Down",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				149,
 				123
 			],
-			"loop": false,
-			"fps": 28,
 			"anim": "singUP-alt",
-			"indices": [],
-			"name": "Slumped Up"
+			"fps": 28,
+			"name": "Slumped Up",
+			"indices": []
 		},
 		{
-			"loop": true,
 			"offsets": [
 				150,
 				80
 			],
-			"anim": "idle-alt",
+			"loop": true,
 			"fps": 24,
-			"name": "Slumped Idle",
-			"indices": []
+			"anim": "idle-alt",
+			"indices": [],
+			"name": "Slumped Idle"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Costume_Mario_Assets",
 	"position": [
-		-50,
-		270
+		140,
+		440
 	],
 	"healthicon": "costume",
 	"flip_x": false,
@@ -125,9 +125,9 @@
 		209
 	],
 	"camera_position": [
-		-160,
-		-390
+		-350,
+		-550
 	],
 	"sing_duration": 6.1,
-	"scale": 1
+	"scale": 2
 }

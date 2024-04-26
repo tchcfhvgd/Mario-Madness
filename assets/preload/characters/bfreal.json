@@ -1,121 +1,121 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				-2,
 				0
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "Left0",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Left0"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				1,
 				-6
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "Down0",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Down0"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-2,
 				26
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "Up0",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "Up0"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				-5
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "Right0",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Right0"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-1,
 				42
 			],
-			"anim": "singLEFTmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "LeftMiss",
-			"indices": []
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "LeftMiss"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				2,
 				52
 			],
-			"anim": "singDOWNmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "DownMiss",
-			"indices": []
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "DownMiss"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				26
 			],
-			"anim": "singUPmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "UpMiss",
-			"indices": []
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "UpMiss"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				3,
 				11
 			],
-			"anim": "singRIGHTmiss",
+			"loop": false,
 			"fps": 24,
-			"name": "RightMiss",
-			"indices": []
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "RightMiss"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "Idle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "Idle"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				109,
 				87
 			],
-			"indices": [],
+			"anim": "firstDeath",
 			"fps": 24,
-			"anim": "faint",
-			"loop": false,
-			"name": "he dead lol"
+			"name": "he dead lol",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/L_is_Real_BF_AssetsFINAL",
 	"position": [
-		40,
-		390
+		150,
+		520
 	],
 	"healthicon": "bf",
 	"flip_x": true,
@@ -125,9 +125,9 @@
 		209
 	],
 	"camera_position": [
-		0,
-		0
+		110,
+		-130
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 2
 }

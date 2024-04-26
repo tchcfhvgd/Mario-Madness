@@ -1,103 +1,103 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "fountain idle"
+			"fps": 24,
+			"name": "fountain idle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				100,
 				-30
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "fountain left"
+			"fps": 24,
+			"name": "fountain left",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				40,
 				-65
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "fountain right"
+			"fps": 24,
+			"name": "fountain right",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-1,
 				-100
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "fountain down"
+			"fps": 24,
+			"name": "fountain down",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-5,
 				90
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "fountain up"
+			"fps": 24,
+			"name": "fountain up",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				50,
 				-10
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT-alt",
-			"indices": [],
-			"name": "fountain alt left"
+			"fps": 24,
+			"name": "fountain alt left",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-20,
 				-3
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT-alt",
-			"indices": [],
-			"name": "fountain alt right"
+			"fps": 24,
+			"name": "fountain alt right",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				5,
 				-25
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singDOWN-alt",
-			"indices": [],
-			"name": "fountain alt down"
+			"fps": 24,
+			"name": "fountain alt down",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				10,
 				40
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP-alt",
-			"indices": [],
-			"name": "fountain alt up"
+			"fps": 24,
+			"name": "fountain alt up",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
@@ -114,8 +114,8 @@
 		13
 	],
 	"camera_position": [
-		-45,
-		420
+		-65,
+		260
 	],
 	"sing_duration": 4,
 	"scale": 0.5
