@@ -90,6 +90,7 @@ class MMOptions extends MusicBeatSubstate
 
 		#if android
 		addVirtualPad(UP_DOWN, A_B);
+		addPadCamera();
 		#end
 		
 		super.create();
@@ -394,12 +395,7 @@ class NotesSubstate extends MusicBeatSubstate
 				{
 					spr.alpha = 0;
 				});
-				#if android
-				FlxTransitionableState.skipNextTransOut = true;
-				FlxG.resetState();
-				#else
 				close();
-				#end
 			}
 			changingNote = false;
 			FlxG.sound.play(Paths.sound('cancelMenu'));
@@ -618,12 +614,7 @@ class ControlsSubstate extends MusicBeatSubstate
 						spr.alpha = 0;
 					}
 				}
-				#if android
-				FlxTransitionableState.skipNextTransOut = true;
-				FlxG.resetState();
-				#else
 				close();
-				#end
 				FlxG.sound.play(Paths.sound('cancelMenu'));
 			}
 
@@ -1004,12 +995,7 @@ class PreferencesSubstate extends MusicBeatSubstate
 				showCharacter.alpha = 0;
 			}
 			descText.alpha = 0;
-			#if android
-				FlxTransitionableState.skipNextTransOut = true;
-				FlxG.resetState();
-				#else
 				close();
-				#end
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 		}
 
@@ -1483,12 +1469,7 @@ class MarioSubstate extends MusicBeatSubstate
 				}
 			}
 			descText.alpha = 0;
-			#if android
-				FlxTransitionableState.skipNextTransOut = true;
-				FlxG.resetState();
-				#else
 				close();
-				#end
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 		}
 
@@ -1711,11 +1692,6 @@ class DeleteSubstate extends MusicBeatSubstate
 			rotButton.x += 400;
 			rotButton.visible = false;
 			add(rotButton);
-
-		        #if android
-		addVirtualPad(NONE, A_B);
-		addPadCamera();
-		#end
 		}
 
 	override function update(elapsed:Float)
@@ -1725,19 +1701,14 @@ class DeleteSubstate extends MusicBeatSubstate
 			}else{
 				timer = 0;
 			}
-			if (controls.BACK && delPhase != 4)
+			if (controls.BACK #if android || FlxG.android.justReleased.BACK #end && delPhase != 4)
 				{
 					FlxG.sound.play(Paths.sound('cancelMenu'));
 					FlxG.mouse.visible = false;
-					#if android
-				FlxTransitionableState.skipNextTransOut = true;
-				FlxG.resetState();
-				#else
 				close();
-				#end
 				}
 			
-			if(controls.ACCEPT && delPhase <= 3 && timer == 0 && cat.angle == 0){
+			if(FlxG.mouse.justPressed && delPhase <= 3 && timer == 0 && cat.angle == 0){
 				switch(delPhase){
 					case 0:
 						timer = 1;
